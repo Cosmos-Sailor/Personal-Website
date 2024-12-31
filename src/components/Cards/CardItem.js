@@ -9,9 +9,10 @@ const CardItem = (props) => {
                 component="div"
                 sx={{
                     backgroundImage: `url(${props.item.image})`,
-                    height: 220, // Increased height for the media
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
+                    height: 320, // Increased height for the media
+                    backgroundSize: 'contain', // Ensures the whole image fits inside
+                    backgroundRepeat: 'no-repeat', // Prevents tiling
+                    backgroundPosition: 'center', // Centers the image
                 }}
                 alt={props.item.title}
             />

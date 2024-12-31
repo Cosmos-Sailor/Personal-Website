@@ -19,6 +19,7 @@ const NavBarItems = () => {
                         display: 'flex',
                         alignItems: 'center',
                         padding: 2,
+                        whiteSpace: "nowrap",
                         borderBottom: location.pathname === item.path ? '3px solid #ffffff' : 'none',
                     }}
                 >

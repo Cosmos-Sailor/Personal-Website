@@ -5,7 +5,7 @@ html, body {
     font-family: "Raleway", serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #e5e3e3; /* Light grey background for a clean, minimalist look */
+    background-color: #a1cdd7; /* Light green background */
     color: #263238; /* Dark grey text for better visibility */
     display: flex;
     flex-direction: column;

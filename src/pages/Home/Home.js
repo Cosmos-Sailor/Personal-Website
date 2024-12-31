@@ -23,6 +23,15 @@ const Home = () => {
                     </Grid2>
                 </Grid2>
             </Container>
+            <Container maxWidth="xl" className="break-content" id="break">
+                <Grid2 container justifyContent="center" alignItems="center" className="home-header">
+                    <Grid2 item xs={12} style={{ textAlign: 'center' }}>
+                        <Typography variant="h1" sx={{ color: '#f5f5f5', fontSize: '3em' }}>
+                            {homeConfig.break}
+                        </Typography>
+                    </Grid2>
+                </Grid2>          
+            </Container>
             <Container maxWidth="xl" className="resume-content" id="resume" sx={{ mt: 6 }}>
                 <Box sx={{ width: '100%', maxWidth: '960px', mx: 'auto' }}>
                     <Timeline items={homeConfig.workTimeline} />
