@@ -1,4 +1,3 @@
-import resume from "../images/Zephyr_Conley_Resume.pdf"
 
 const aboutMeConfig = [
     {
@@ -7,7 +6,7 @@ const aboutMeConfig = [
         links: [
             {
                 name: "PDFdownload ",
-                url: "../images/Zephyr_Conley_Resume.pdf",
+                url: "/resume",
                 icon: "PDF Download",
             },
             {
@@ -16,7 +15,7 @@ const aboutMeConfig = [
                 icon: "LinkedIn",
             },
         ],
-        image: resume,
+        pdf: "https://drive.google.com/file/d/1-FR01kKGRbblFSgBVX5kb14sVOPEW-wG/preview",
         target: "_blank"
     }
 ]

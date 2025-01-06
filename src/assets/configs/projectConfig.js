@@ -1,5 +1,5 @@
 import drone from "../images/Drone.png"
-import segmentation from "../images/Segmentation.png"
+import segmentation from "../images/segmentation.png"
 import amcl from "../images/AMCL.png"
 import arm from "../images/arm.png"
 
@@ -10,7 +10,7 @@ const projectConfig = [
         links: [
             {
                 name: "read more",
-                url: ".../pages/Projects/Terrawarden",
+                url: "/projects/Terrawarden",
                 icon: "Read More",
             },
         ],
@@ -24,7 +24,7 @@ const projectConfig = [
         links: [
             {
                 name: "read more",
-                url: ".../pages/Projects/SemanticSegmentation",
+                url: "/projects/SemanticSegmentation",
                 icon: "Read More",
             },
         ],
@@ -38,7 +38,7 @@ const projectConfig = [
         links: [
             {
                 name: "read more",
-                url: ".../pages/Projects/SLAM_Navigation",
+                url: "/projects/SLAM",
                 icon: "Read More",
             },
         ],
@@ -52,7 +52,7 @@ const projectConfig = [
         links: [
             {
                 name: "read more",
-                url: ".../pages/Projects/4DOF_Arm",
+                url: "/projects/4DOF",
                 icon: "Read More",
             },
         ],

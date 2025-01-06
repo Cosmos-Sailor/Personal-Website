@@ -1,0 +1,7 @@
+.slide {
+    display: flex;
+}
+
+.slide-hidden {
+    display: none;
+}

@@ -9,8 +9,6 @@ const CardIcons = (props) => {
                     key={props.item.id + link.name}
                     title={link.name}
                     href={link.url}
-                    target={props.item.target}
-                    rel="noopener noreferrer"
                     color="primary"
                     sx={{ color: '#263238', padding: 0.5 }}
                 >
