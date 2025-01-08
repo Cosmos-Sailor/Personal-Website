@@ -6,16 +6,15 @@ import projectConfig from '../../assets/configs/projectDetailsConfigs'
 import "./ProjectDetails.css"
 
 const ProjectDetails = () => {
-    const { projectId } = useParams();
-    console.log(projectId)
 
-    const [project, setProject] = useState(projectConfig.find((item) => item.id === projectId))
+    const [project, setProject] = useState("")
     const [currentIndex, setCurrentIndex] = useState(0)
     const [projectDescription, setProjectDescription] = useState("")
     const [methodology, setMethodology] = useState("")
     const [reflection, setReflection] = useState("")
 
     useEffect(() => {
+        const { projectId } = useParams();
         setProject(projectConfig.find((item) => item.id === projectId))
       }, [projectId]);
 
