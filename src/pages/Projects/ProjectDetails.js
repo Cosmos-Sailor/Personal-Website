@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { useParams} from "react-router-dom";
 import { Box } from '@mui/material';
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill} from 'react-icons/bs';
@@ -9,11 +9,15 @@ const ProjectDetails = () => {
     const { projectId } = useParams();
     console.log(projectId)
 
-    const project = projectConfig.find((item) => item.id === projectId);
+    const [project, setProject] = useState(projectConfig.find((item) => item.id === projectId))
     const [currentIndex, setCurrentIndex] = useState(0)
     const [projectDescription, setProjectDescription] = useState("")
     const [methodology, setMethodology] = useState("")
     const [reflection, setReflection] = useState("")
+
+    useEffect(() => {
+        setProject(projectConfig.find((item) => item.id === projectId))
+      }, [projectId]);
 
 
     if (!project) {
