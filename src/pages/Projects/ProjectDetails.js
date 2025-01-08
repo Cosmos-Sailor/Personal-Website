@@ -6,7 +6,7 @@ import projectConfig from '../../assets/configs/projectDetailsConfigs'
 import "./ProjectDetails.css"
 
 const ProjectDetails = () => {
-
+    const { projectId } = useParams();
     const [project, setProject] = useState("")
     const [currentIndex, setCurrentIndex] = useState(0)
     const [projectDescription, setProjectDescription] = useState("")
@@ -14,7 +14,6 @@ const ProjectDetails = () => {
     const [reflection, setReflection] = useState("")
 
     useEffect(() => {
-        const { projectId } = useParams();
         setProject(projectConfig.find((item) => item.id === projectId))
       }, [projectId]);
 
