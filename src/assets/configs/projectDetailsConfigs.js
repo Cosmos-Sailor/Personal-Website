@@ -11,6 +11,10 @@ import semanticDescription from "../projectDescriptions/semanticDescription.txt"
 import semanticMethodology from "../projectDescriptions/semanticMethodology.txt"
 import semanticReflection from "../projectDescriptions/semanticReflection.txt"
 
+import terrawardenDescription from "../projectDescriptions/terrawardenDescription.txt"
+import terrawardenMethodology from "../projectDescriptions/terrawardenMethodology.txt"
+import terrawardenReflection from "../projectDescriptions/terrawardenReflection.txt"
+
 import segmentationVideo from "../videos/segmentation.mp4"
 
 const projectConfig = [
@@ -21,9 +25,9 @@ const projectConfig = [
         myRoles: "Manipulator Design and Controls",
         teamSize:"6",
         timeline:"April 2024 - Present",
-        description: "This is the first project.",
-        methodology: "This is what we did for the project",
-        reflection: "This is what I wish I could have done differently",
+        description: terrawardenDescription,
+        methodology: terrawardenMethodology,
+        reflection: terrawardenReflection,
         images: [
             {name: "Full drone CAD", link: drone}, {name: "pic2", link: amcl}, {name: "pic3", link: arm}],
         links: [

@@ -1,0 +1,27 @@
+Drone Hardware
+- Jetson Orin NX companion computer​
+- Pixhawk 6X autopilot flight computer​
+- 38 cm propellers​
+- MicoAir optical flow and distance sensor​
+- ELRS 2.4GHz remote control receiver​
+- Intel RealSense D455i depth camera​
+- Dynamixel OpenRB-150 servo controller
+
+Manipulator Design
+- 3-DOF, ZYY joint config arm​
+- Compliant and lightweight​
+- Dynamixel XM430 actuators​
+- 3D printed using ABS-GF
+
+Gripper Design
+- Fin Ray inspired compliant finger  design printed in TPU​
+- Driven by symmetrical four-bar​
+- Total weight ~150 g
+
+Trash Detection
+- Custom dataset of trash, CaNET, generated with Blender​
+- Convolutional neural network, YOLOv11, to detect trash
+
+Vision-Based Manipulation
+- Stereo depth vision converts ​a 2D point to 3D​
+- Point Cloud Library extracts the object cluster

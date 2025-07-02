@@ -1,0 +1,17 @@
+Results
+- Autonomous flight and trash pickup​
+- Flight hold within 10 cm of setpoint​
+- Manipulator within 2 cm of setpoint​
+- Gripper holds 350 g payload​
+- Trash detection 83.2% accurate​
+- 60.9% of real-world cans detected
+- Detection accurate up to 4 m​
+- Vision feedback in under 40 ms
+
+Future Work
+- Switch to model predictive control​
+- Implement collision avoidance​
+- Add robust outdoor search pattern ​
+- More durable manipulator control​
+- Improve vision accuracy and speed​
+- Expand vision object dataset
