@@ -1,4 +1,8 @@
+import droneRender from "../images/Drone.png"
+import droneReal from "../images/drone_real.png"
+import terrawardenArm from "../images/terrawarden_arm.png"
 import drone from "../images/Drone.png"
+
 import amcl from "../images/AMCL.png"
 import arm from "../images/arm.png"
 
@@ -16,6 +20,7 @@ import terrawardenMethodology from "../projectDescriptions/terrawardenMethodolog
 import terrawardenReflection from "../projectDescriptions/terrawardenReflection.txt"
 
 import segmentationVideo from "../videos/segmentation.mp4"
+import terrawardenVideo from "../videos/terrawarden.mp4"
 
 const projectConfig = [
     {
@@ -29,9 +34,13 @@ const projectConfig = [
         methodology: terrawardenMethodology,
         reflection: terrawardenReflection,
         images: [
-            {name: "Full drone CAD", link: drone}, {name: "pic2", link: amcl}, {name: "pic3", link: arm}],
+            {name: "Project Overview", link: terrawardenVideo, media: "video"},
+            {name: "Full Drone CAD Render", link: droneRender, media: "image"}, 
+            {name: "Drone Flying Indoors", link: droneReal, media: "image"},
+            {name: "Arm Render", link: terrawardenArm, media: "image"}],
         links: [
-            { name: "GitHub", url: "https://github.com/example/project1" },
+            { name: "GitHub", url: "https://github.com/Terrawarden-MQP" },
+            { name: "Engineering Paper", url: "https://github.com/example/project1" }
         ],
     },
     {
@@ -45,8 +54,8 @@ const projectConfig = [
         methodology: semanticMethodology,
         reflection: semanticReflection,
         images: [
-            {name: "Semantic Segmentation Mask Applied to Video", link: segmentationVideo, media: "video"}, 
-            {name: "Frame from segmented video", link: segmentation, media: "image"}, 
+            {name: "Frame from segmented video", link: segmentation, media: "image"},
+            {name: "Semantic Segmentation Mask Applied to Video", link: segmentationVideo, media: "video"},  
             {name: "Model Output from Validation Set (Left: Model Output, Center: Mask from Dataset, Right: Original Image)", link: modelout, media: "image"},
             {name: "Graph of Training Loss over Epochs", link: trainloss, media: "image"},
             {name: "Sample image augmented in Pytorch", link: transformed, media: "image"}
