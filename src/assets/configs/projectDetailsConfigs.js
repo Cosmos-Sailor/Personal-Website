@@ -79,11 +79,18 @@ const projectConfig = [
     },
     {
         id: "SLAM",
-        title: "Project Two",
-        description: "This is the second project.",
-        image: "/path/to/image2.jpg",
+        title: "Simultaneous Location and Mapping",
+        projectType: "Autonomous Robotic Navigation",
+        myRoles: "Robotic Controls",
+        teamSize:"3",
+        timeline:"March 2024 - May 2024",
+        description: "This is the first project.",
+        methodology: "This is what we did for the project",
+        reflection: "This is what I wish I could have done differently",
+        images: [
+            {name: "Full drone CAD", link: drone}, {name: "pic2", link: amcl}, {name: "pic3", link: arm}],
         links: [
-            { name: "Live Demo", url: "https://example.com/project2" },
+            { name: "GitHub", url: "https://github.com/example/project1" },
         ],
     },
     // Add more projects as needed
