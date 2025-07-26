@@ -20,7 +20,7 @@ const homeConfig = {
         "A Flutist"
     ],
     about: {
-        start: "I am a recent graduate from Worcester Polytechnic Institute with a Bachelor's Degree in Mechanical and Robotics Engineering." + 
+        start: "I am a recent graduate from Worcester Polytechnic Institute with a Bachelor's Degree in Mechanical and Robotics Engineering." +
                 " My specialties lie in manipulator design, robotic controls, aerial manipulators, and machine leaning for computer vision." +
                 " I am a jack-of-all-trades and I love working on multiple aspects of a project, especially when they involve robotic design, control systems, or aerial robotics.",
         exit: "I am experienced in programming and engineering design and I am proficient in many softwares and programming languages" + 
@@ -44,7 +44,7 @@ const homeConfig = {
             id: "work-2",
             title: "Advanced Manufacturing Engineering Intern",
             company: "TPI Composites/Senvias",
-            description: "- Assembled design specifications consisting of engineering drawings, safety analysis, and proposed solutions for complex industrial automation processes, such as a rotisserie system designed to raise and rotate composite molds weighing up to 2,000 lbs" +
+            description: "- Assembled design specifications consisting of engineering drawings, safety analysis, and proposed solutions for complex industrial automation processes, such as a rotisserie system designed to raise and rotate composite molds weighing up to 2,000 lbs" + "\n" +
                         " - Developed and improved SOPs for industrial processes such as operation of the industrial oven and safe use of the CNC machines",
             date: "May 2024 - August 2024",
             icon: <FaMobileAlt/>,
@@ -54,7 +54,7 @@ const homeConfig = {
             id: "work-1",
             title: "Instrumentation and Controls Intern",
             company: "Framatome",
-            description: "- Implemented full-stack development of a user-friendly application coded in VBA that automatically extracts information from AutoCAD drawings, generates new drawings based on a template, and modifies existing drawing using data from an Access database" + 
+            description: "- Implemented full-stack development of a user-friendly application coded in VBA that automatically extracts information from AutoCAD drawings, generates new drawings based on a template, and modifies existing drawing using data from an Access database" + "\n" +
                         "- Documented the development, suggested future improvements, and wrote a step-by-step guide on how to use the tool for new users",
             date: "May 2023 - August 2023",
             icon: <DiCodeigniter/>,
@@ -64,7 +64,7 @@ const homeConfig = {
             id: "work-0",
             title: "Peer Tutor",
             company: "WPI Academic Resource Center",
-            description: "-	Tutored groups of 1-15 students in subjects such as mechanics, electricity and magnetism, integral calculus, and multivariable calculus" +
+            description: "-	Tutored groups of 1-15 students in subjects such as mechanics, electricity and magnetism, integral calculus, and multivariable calculus" + "\n" +
                         "- Collaborated with professors, TAs, and other ARC staff to help students achieve maximal understanding of subject material",
             date: "April 2021 - May 2024",
             icon: <GiCommercialAirplane/>,
