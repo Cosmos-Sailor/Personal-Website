@@ -9,7 +9,7 @@ const homeConfig = {
 
     greeting:
         <h1 className="heading">
-            Hi! I'm <strong className="main-name"> Zephyr Conley</strong>
+            <strong className="main-name">Hi! I'm Zephyr Conley</strong>
         </h1>,
     titles: [
         "A Roboticist",
@@ -20,9 +20,9 @@ const homeConfig = {
         "A Flutist"
     ],
     about: {
-        start: "I am a senior at Worcester Polytechnic Institute double majoring in Mechanical Engineering and Robotics Engineering." + 
-                " My specialties lie in manipulator design, aerial manipulators, and machine leaning for computer vision." +
-                " I am a jack-of-all-trades and I love working on multiple aspects of a project, especially when they involve design, robotic controls, or aerial robotics.",
+        start: "I am a recent graduate from Worcester Polytechnic Institute with a Bachelor's Degree in Mechanical and Robotics Engineering." + 
+                " My specialties lie in manipulator design, robotic controls, aerial manipulators, and machine leaning for computer vision." +
+                " I am a jack-of-all-trades and I love working on multiple aspects of a project, especially when they involve robotic design, control systems, or aerial robotics.",
         exit: "I am experienced in programming and engineering design and I am proficient in many softwares and programming languages" + 
               " such as Solidworks, Github, ROS, ROS2, Ubuntu, Python, Matlab, Java, Javascript, and HTML."
     },
@@ -35,36 +35,37 @@ const homeConfig = {
             id: "work-3",
             title: "TerraWarden Drone Cleanup MQP",
             company: "WPI Senior Project",
-            description: "Working in a team of 6 to build an aerial manipulator capable of cleaning up trash from highway medians.",
-            date: "April 2024 - Present",
+            description: "Worked in a team of 6 to build a proof-of-concept aerial manipulator for trash detection and collection on highway medians.",
+            date: "April 2024 - May 2025",
             icon: <BiRocket/>,
-            tags: ["Deep Learning", "Autonomous Aerial Vehicle", "Aerial Controls", "CAD", "Design", "Prototyping"]
+            tags: ["Deep Learning", "Autonomous Aerial Vehicle", "Aerial Controls", "CAD", "Manipulator Design", "Prototyping"]
         },
         {
             id: "work-2",
             title: "Advanced Manufacturing Engineering Intern",
             company: "TPI Composites/Senvias",
-            description: "Performed safety analysis on a rotisserie system designed to raise and rotate composite molds weighing up to 2,000 lbs." +
-                        " Generated engineering drawings of the system and produced a comprehensive report detailing current safety concerns and possible solutions",
+            description: "- Assembled design specifications consisting of engineering drawings, safety analysis, and proposed solutions for complex industrial automation processes, such as a rotisserie system designed to raise and rotate composite molds weighing up to 2,000 lbs" +
+                        " - Developed and improved SOPs for industrial processes such as operation of the industrial oven and safe use of the CNC machines",
             date: "May 2024 - August 2024",
             icon: <FaMobileAlt/>,
-            tags: ["CAD", "Mechanical Design", "Prototyping", "Research", "Soldering", "Collaboration"]
+            tags: ["CAD", "Mechanical Design", "Design Specification", "Prototyping", "Engineering Research", "SOP Writing", "Soldering"]
         },
         {
             id: "work-1",
             title: "Instrumentation and Controls Intern",
             company: "Framatome",
-            description: "Coded an app in VBA with a user-friendly UI that allowed engineers to automatically extract information from multiple AutoCAD drawings, " + 
-                        "generate new drawings, and input data from a database into an existing drawing along with other useful functions.",
+            description: "- Implemented full-stack development of a user-friendly application coded in VBA that automatically extracts information from AutoCAD drawings, generates new drawings based on a template, and modifies existing drawing using data from an Access database" + 
+                        "- Documented the development, suggested future improvements, and wrote a step-by-step guide on how to use the tool for new users",
             date: "May 2023 - August 2023",
             icon: <DiCodeigniter/>,
-            tags: ["AutoCAD", "Microsoft Access", "VBA", "Database Design and Management", "UI design"]
+            tags: ["AutoCAD", "Microsoft Access", "VBA", "Database Design and Management", "UI design", "System documentation"]
         },
         {
             id: "work-0",
             title: "Peer Tutor",
             company: "WPI Academic Resource Center",
-            description: "Tutored groups of 1-15 students in subjects such as physics (mechanical and electricity and magnetism), integral calculus and multivariable calculus.",
+            description: "-	Tutored groups of 1-15 students in subjects such as mechanics, electricity and magnetism, integral calculus, and multivariable calculus" +
+                        "- Collaborated with professors, TAs, and other ARC staff to help students achieve maximal understanding of subject material",
             date: "April 2021 - May 2024",
             icon: <GiCommercialAirplane/>,
             tags: ["Collaboration", "Calculus", "Physics", "Social Skills"]
