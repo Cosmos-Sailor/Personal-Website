@@ -11,11 +11,11 @@ const aboutMeConfig = [
             },
             {
                 name: "linkedin",
-                url: "https://www.linkedin.com/in/zephyr-conley-497708237/",
+                url: "https://www.linkedin.com/in/zephyr-conley/",
                 icon: "LinkedIn",
             },
         ],
-        pdf: "https://drive.google.com/file/d/1-FR01kKGRbblFSgBVX5kb14sVOPEW-wG/preview",
+        pdf: "https://drive.google.com/file/d/1oqw8NTNgxCC9e0EoNgI4kEHlBUmAxIa4/preview",
         target: "_blank"
     }
 ]
