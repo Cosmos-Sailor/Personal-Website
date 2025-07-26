@@ -21,12 +21,11 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div style={{textAlign: 'left', marginLeft: 20, marginRight: 20, marginTop: '-20px'}}>
-                    <p style={{marginBottom: '-10px', fontSize: 18}}>Nice to meet you! I'm a Senior at WPI studying Robotics and Mechanical Engineering! 
-                                I specialize in robotics navigation, robotics controls, and mechanical design, but I have a vested interest in Reinforcement Learning and AI, particularly for computer vision in robotics. 
-                                My hobbies include sailing, playing the flute, and creative writing. If you are interested in my creative work, you can read my latest collection of short stories, Playground Tales on my Projects Page.</p>
+                    <p style={{marginBottom: '-10px', fontSize: 18}}>Nice to meet you! I'm a reccent graduate from WPI where I double-majored in Robotics Engineering and Mechanical Engineering.
+                            My experience is with robotics navigation, robotics controls, and mechanical design, but I also have a vested interest in Reinforcement Learning and AI, particularly for computer vision in robotics. 
+                                My hobbies include sailing, playing the flute, and creative writing.</p>
                     <br />
-                    <p style={{fontSize: 18}}>I am looking for a full-time position beginning after my graduation in May 2025. 
-                    I am interested in finding work that matches my experience while leaving room for my skills to develop over time.</p>
+                    <p style={{fontSize: 18}}>I am looking for a full-time position and I am interested in finding work that matches my experience and provides opportunities to develop my skills over time.</p>
                 </div>
             </Box>
 
