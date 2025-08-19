@@ -44,8 +44,12 @@ const homeConfig = {
             id: "work-2",
             title: "Advanced Manufacturing Engineering Intern",
             company: "TPI Composites/Senvias",
-            description: "- Assembled design specifications consisting of engineering drawings, safety analysis, and proposed solutions for complex industrial automation processes, such as a rotisserie system designed to raise and rotate composite molds weighing up to 2,000 lbs" + "\n" +
-                        " - Developed and improved SOPs for industrial processes such as operation of the industrial oven and safe use of the CNC machines",
+            description:
+                    <ul>
+                        <li>Assembled design specifications consisting of engineering drawings, safety analysis, and proposed solutions for complex industrial automation processes, such as a rotisserie system designed to raise and rotate composite molds weighing up to 2,000 lbs</li>
+                        <li>Developed and improved SOPs for industrial processes such as operation of the industrial oven and safe use of the CNC machines</li>
+                    </ul>,
+
             date: "May 2024 - August 2024",
             icon: <FaMobileAlt/>,
             tags: ["CAD", "Mechanical Design", "Design Specification", "Prototyping", "Engineering Research", "SOP Writing", "Soldering"]
