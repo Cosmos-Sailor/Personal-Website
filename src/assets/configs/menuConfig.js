@@ -27,13 +27,13 @@ const menuConfig = {
       icon: <BsMedium size={35} />,
       className: "nav-text",
     },
-    {
-      id: "menu-3",
-      title: "Skills",
-      path: "/skills",
-      icon: <AiFillCode size={35} />,
-      className: "nav-text",
-    },
+    // {
+    //   id: "menu-3",
+    //   title: "Skills",
+    //   path: "/skills",
+    //   icon: <AiFillCode size={35} />,
+    //   className: "nav-text",
+    // },
   ],
 };
 
