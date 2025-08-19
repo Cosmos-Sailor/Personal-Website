@@ -35,7 +35,7 @@ const homeConfig = {
             id: "work-3",
             title: "TerraWarden Drone Cleanup MQP",
             company: "WPI Senior Project",
-            description: "Worked in a team of 6 to build a proof-of-concept aerial manipulator for trash detection and collection on highway medians.",
+            description: "Worked in a team of 6 to design, manufacture, and build a proof-of-concept aerial manipulator for trash detection and collection on highway medians.",
             date: "April 2024 - May 2025",
             icon: <BiRocket/>,
             tags: ["Deep Learning", "Autonomous Aerial Vehicle", "Aerial Controls", "CAD", "Manipulator Design", "Prototyping"]
@@ -58,8 +58,11 @@ const homeConfig = {
             id: "work-1",
             title: "Instrumentation and Controls Intern",
             company: "Framatome",
-            description: "- Implemented full-stack development of a user-friendly application coded in VBA that automatically extracts information from AutoCAD drawings, generates new drawings based on a template, and modifies existing drawing using data from an Access database" + "\n" +
-                        "- Documented the development, suggested future improvements, and wrote a step-by-step guide on how to use the tool for new users",
+            description:
+                    <ul>
+                        <li>Implemented full-stack development of a user-friendly application coded in VBA that automatically extracts information from AutoCAD drawings, generates new drawings based on a template, and modifies existing drawing using data from an Access database</li>
+                        <li>Documented the development, suggested future improvements, and wrote a step-by-step guide on how to use the tool for new users</li>
+                    </ul>,
             date: "May 2023 - August 2023",
             icon: <DiCodeigniter/>,
             tags: ["AutoCAD", "Microsoft Access", "VBA", "Database Design and Management", "UI design", "System documentation"]
@@ -68,8 +71,11 @@ const homeConfig = {
             id: "work-0",
             title: "Peer Tutor",
             company: "WPI Academic Resource Center",
-            description: "-	Tutored groups of 1-15 students in subjects such as mechanics, electricity and magnetism, integral calculus, and multivariable calculus" + "\n" +
-                        "- Collaborated with professors, TAs, and other ARC staff to help students achieve maximal understanding of subject material",
+            description:
+                    <ul>
+                        <li>Tutored groups of 1-15 students in subjects such as mechanics, electricity and magnetism, integral calculus, and multivariable calculus</li>
+                        <li>Collaborated with professors, TAs, and other ARC staff to help students achieve maximal understanding of subject material</li>
+                    </ul>,
             date: "April 2021 - May 2024",
             icon: <GiCommercialAirplane/>,
             tags: ["Collaboration", "Calculus", "Physics", "Social Skills"]
