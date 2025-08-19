@@ -19,6 +19,8 @@ import terrawardenDescription from "../projectDescriptions/terrawardenDescriptio
 import terrawardenMethodology from "../projectDescriptions/terrawardenMethodology.txt"
 import terrawardenReflection from "../projectDescriptions/terrawardenReflection.txt"
 
+import underConstruction from "../projectDescriptions/UnderConstruction.txt"
+
 import segmentationVideo from "../videos/segmentation.mp4"
 import terrawardenVideo from "../videos/terrawarden.mp4"
 
@@ -68,9 +70,9 @@ const projectConfig = [
         myRoles: "Manipulator Design and Controls",
         teamSize:"6",
         timeline:"April 2024 - Present",
-        description: "This is the first project.",
-        methodology: "This is what we did for the project",
-        reflection: "This is what I wish I could have done differently",
+        description: underConstruction,
+        methodology: underConstruction,
+        reflection: underConstruction,
         images: [
             {name: "Full drone CAD", link: drone}, {name: "pic2", link: amcl}, {name: "pic3", link: arm}],
         links: [
@@ -84,9 +86,9 @@ const projectConfig = [
         myRoles: "Robotic Controls",
         teamSize:"3",
         timeline:"March 2024 - May 2024",
-        description: "This is the first project.",
-        methodology: "This is what we did for the project",
-        reflection: "This is what I wish I could have done differently",
+        description: underConstruction,
+        methodology: underConstruction,
+        reflection: underConstruction,
         images: [
             {name: "Full drone CAD", link: drone}, {name: "pic2", link: amcl}, {name: "pic3", link: arm}],
         links: [
