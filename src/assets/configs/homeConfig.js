@@ -35,7 +35,10 @@ const homeConfig = {
             id: "work-3",
             title: "TerraWarden Drone Cleanup MQP",
             company: "WPI Senior Project",
-            description: "Worked in a team of 6 to design, manufacture, and build a proof-of-concept aerial manipulator for trash detection and collection on highway medians.",
+            description: 
+                    <ul>
+                        <li>Worked in a team of 6 to design, manufacture, and build a proof-of-concept aerial manipulator for trash detection and collection on highway medians.</li>
+                    </ul>,
             date: "April 2024 - May 2025",
             icon: <BiRocket/>,
             tags: ["Deep Learning", "Autonomous Aerial Vehicle", "Aerial Controls", "CAD", "Manipulator Design", "Prototyping"]
