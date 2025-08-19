@@ -26,7 +26,7 @@ const Home = () => {
             <Container maxWidth="xl" className="break-content" id="break">
                 <Grid2 container justifyContent="center" alignItems="center" className="home-header">
                     <Grid2 item xs={12} style={{ textAlign: 'center' }}>
-                        <Typography variant="h1" sx={{fontSize: '3em' }}>
+                        <Typography variant="h1" sx={{ color: '#f5f5f5', fontSize: '3em' }}>
                             {homeConfig.break}
                         </Typography>
                     </Grid2>

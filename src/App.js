@@ -33,7 +33,7 @@ function App() {
                                     <Route path="/projects" exact element={<Projects />} />
                                     <Route path="/projects/:projectId" element={<ProjectDetails />} />
                                     <Route path="/aboutme" exact element={<AboutMe />} />
-                                    <Route path="/skills" exact element={<Skills />} />
+                                    {/* <Route path="/skills" exact element={<Skills />} /> */}
                                 </Routes>
                             </Container>
                             <Footer />
