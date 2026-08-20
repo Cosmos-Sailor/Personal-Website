@@ -101,7 +101,7 @@ const ProjectDetails = () => {
                         <div style={{borderRadius: '0.5rem', boxShadow: '0px 0px 7px #666', maxWidth: '60%', maxHeight: '400px'}}>
                             <h3 style={{fontSize: 16, marginBottom: '0px', fontWeight: 'normal', whiteSpace: 'pre-wrap'}}>{blurb.link}</h3>
                         </div>
-                    ))}
+                    )}
                     <BsArrowRightCircleFill onClick={handleNext} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                 </div>
                 <h3 style={{display: 'flex',  justifyContent: 'center', fontSize: 20}}>{project.blurbs[currentIndex].name}</h3>
