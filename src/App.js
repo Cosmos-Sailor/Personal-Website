@@ -5,7 +5,6 @@ import NavBar from './components/NavBar/NavBar';
 import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
 import ProjectDetails from './pages/Projects/ProjectDetails'
-import Skills from './pages/Skills/Skills';
 import AboutMe from './pages/AboutMe/AboutMe';
 import Footer from './components/Footer/Footer';
 import Resume from './pages/AboutMe/Resume'
