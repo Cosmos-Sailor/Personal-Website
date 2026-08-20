@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AiFillCode, AiFillHome, AiOutlineGithub } from "react-icons/ai";
+import { AiFillHome, AiOutlineGithub } from "react-icons/ai";
 
 import { BsMedium } from "react-icons/bs";
 
