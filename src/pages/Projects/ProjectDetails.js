@@ -13,29 +13,6 @@ const ProjectDetails = () => {
     useEffect(() => {
         setProject(projectConfig.find((item) => item.id === projectId))
       }, [projectId])
-    
-    useEffect(() => {
-        async function getText(fileName, type) {
-            try {
-                const response = await fetch(fileName)
-                const text = await response.text()
-                
-                if(type === "description") setProjectDescription(text)
-                if(type === "methodology") setMethodology(text)
-                if(type === "reflection") setReflection(text)
-            } catch (error) {
-                console.error("error fetching text:", error)
-            }
-        }
-
-        if(project) {
-            getText(project.description, "description")
-            getText(project.methodology, "methodology")
-            getText(project.reflection, "reflection")
-        }
-
-    }, [project])
-
 
     if (!project) {
         return <p>Project not found!</p>;
