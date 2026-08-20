@@ -51,6 +51,18 @@ const ProjectDetails = () => {
     const handlePrev = () => {
         setCurrentIndex(currentIndex === 0 ? project.images.length - 1: currentIndex -1)
     }
+
+    // <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
+    // <h3 style={{fontSize: 46, padding: '10px', marginBottom: '10px'}}>Project Overview</h3>
+    //     <div style={{marginTop:"-50px", display: 'flex', flexDirection: 'column', gap: '0px', textAlign: 'left', paddingLeft: 0, padding: '1.25rem'}}>
+    //         <h3 style={{fontSize: 22, marginBottom: '0px'}}>Project Description</h3>
+    //         <h3 style={{fontSize: 16, marginBottom: '0px', fontWeight: 'normal', whiteSpace: 'pre-wrap'}}>{projectDescription}</h3>
+    //         <h3 style={{fontSize: 22, marginBottom: '0px'}}>Methodology</h3>
+    //         <h3 style={{fontSize: 16, marginBottom: '0px', fontWeight: 'normal', whiteSpace: 'pre-wrap'}}>{methodology}</h3>
+    //         <h3 style={{fontSize: 22, marginBottom: '0px'}}>Reflection</h3>
+    //         <h3 style={{fontSize: 16, marginBottom: '0px', fontWeight: 'normal', whiteSpace: 'pre-wrap'}}>{reflection}</h3>
+    //     </div>
+    // </Box>
     
 
     return (
@@ -101,7 +113,7 @@ const ProjectDetails = () => {
                         <div style={{borderRadius: '0.5rem', boxShadow: '0px 0px 7px #666', maxWidth: '60%', maxHeight: '400px'}}>
                             <h3 style={{fontSize: 16, marginBottom: '0px', fontWeight: 'normal', whiteSpace: 'pre-wrap'}}>{blurb.link}</h3>
                         </div>
-                    )}
+                    ))}
                     <BsArrowRightCircleFill onClick={handleNext} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                 </div>
                 <h3 style={{display: 'flex',  justifyContent: 'center', fontSize: 20}}>{project.blurbs[currentIndex].name}</h3>
@@ -111,18 +123,6 @@ const ProjectDetails = () => {
                     })}
                 </span>
             </Box>
-                        
-            // <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
-            // <h3 style={{fontSize: 46, padding: '10px', marginBottom: '10px'}}>Project Overview</h3>
-            //     <div style={{marginTop:"-50px", display: 'flex', flexDirection: 'column', gap: '0px', textAlign: 'left', paddingLeft: 0, padding: '1.25rem'}}>
-            //         <h3 style={{fontSize: 22, marginBottom: '0px'}}>Project Description</h3>
-            //         <h3 style={{fontSize: 16, marginBottom: '0px', fontWeight: 'normal', whiteSpace: 'pre-wrap'}}>{projectDescription}</h3>
-            //         <h3 style={{fontSize: 22, marginBottom: '0px'}}>Methodology</h3>
-            //         <h3 style={{fontSize: 16, marginBottom: '0px', fontWeight: 'normal', whiteSpace: 'pre-wrap'}}>{methodology}</h3>
-            //         <h3 style={{fontSize: 22, marginBottom: '0px'}}>Reflection</h3>
-            //         <h3 style={{fontSize: 16, marginBottom: '0px', fontWeight: 'normal', whiteSpace: 'pre-wrap'}}>{reflection}</h3>
-            //     </div>
-            // </Box>
         </section>
     );
 };
