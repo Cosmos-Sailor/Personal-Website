@@ -9,9 +9,6 @@ const ProjectDetails = () => {
     const { projectId } = useParams();
     const [project, setProject] = useState("")
     const [currentIndex, setCurrentIndex] = useState(0)
-    const [projectDescription, setProjectDescription] = useState("")
-    const [methodology, setMethodology] = useState("")
-    const [reflection, setReflection] = useState("")
 
     useEffect(() => {
         setProject(projectConfig.find((item) => item.id === projectId))
