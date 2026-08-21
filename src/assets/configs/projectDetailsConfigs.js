@@ -11,17 +11,11 @@ import modelout from "../images/modelout.png"
 import trainloss from "../images/trainloss.png"
 import transformed from "../images/transformed.png"
 
-import semanticDescription from "../projectDescriptions/semanticDescription.txt"
-import semanticMethodology from "../projectDescriptions/semanticMethodology.txt"
-import semanticReflection from "../projectDescriptions/semanticReflection.txt"
-
 import MQP_Definition from "../projectDescriptions/MQP Definition.txt"
 import MQP_Definition from "../projectDescriptions/terrawardenDrone.txt"
 import terrawardenDescription from "../projectDescriptions/terrawardenDescription.txt"
 import terrawardenMethodology from "../projectDescriptions/terrawardenMethodology.txt"
 import terrawardenReflection from "../projectDescriptions/terrawardenReflection.txt"
-
-import underConstruction from "../projectDescriptions/UnderConstruction.txt"
 
 import segmentationVideo from "../videos/segmentation.mp4"
 import terrawardenVideo from "../videos/terrawarden.mp4"
