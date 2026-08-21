@@ -72,9 +72,25 @@ const ProjectDetails = () => {
                     </div>
                 </div>
             </Box>
+            
+        <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
+                <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>{project.blurbs[currentBlurbIndex].name}</h3>
+                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    <BsArrowLeftCircleFill onClick={handlePrevBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
+                    {project.blurbs.map((blurb, index) => (
+                        <p className={currentBlurbIndex === index ? "slide" : "slide-hidden"} style={{ textAlign: 'left', fontSize:18, lineHeight: 1.6, maxWidth: '80%'}}>{currentCarouselText}</p>
+                    ))}
+                    <BsArrowRightCircleFill onClick={handleNextBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
+                </div>
+                <span style={{display: 'flex', position: 'relative', justifyContent: 'center', padding: '0px 0px 20px 0px'}}>
+                    {project.blurbs.map((__, idx) => {
+                        return <button style={{backgroundColor: 'rgba(76, 80, 79, 0.42)', height: 15, width: 15, borderRadius: '100%', margin: ' 0 0.2rem', padding: '0px'}} key={idx} onClick={() => setCurrentBlurbIndex(idx)}></button>
+                    })}
+                </span> 
+            </Box>
 
             <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
-                <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>Project Visuals</h3>
+                <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>Additional Project Visuals</h3>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <BsArrowLeftCircleFill onClick={handlePrevImage} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                     {project.images.map((image, index) => (
@@ -94,21 +110,18 @@ const ProjectDetails = () => {
                     })}
                 </span>
             </Box>
-                        
+
             <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
-                <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>{project.blurbs[currentBlurbIndex].name}</h3>
+                <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>{Want to Learn More? Click here!}</h3>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <BsArrowLeftCircleFill onClick={handlePrevBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
-                    {project.blurbs.map((blurb, index) => (
-                        <p className={currentBlurbIndex === index ? "slide" : "slide-hidden"} style={{ textAlign: 'left', fontSize:18, lineHeight: 1.6, maxWidth: '80%'}}>{currentCarouselText}</p>
+                    {project.resources.map((resource, index) => (
+                        <Grid2 container spacing={6} justifyContent="center">
+                            <Grid2 resouce="true" key={index} xs={12} sm={6} md={4}>
+                                <CardItem item={resource.description} />
+                            </Grid2>
+                        </Grid2>
                     ))}
-                    <BsArrowRightCircleFill onClick={handleNextBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                 </div>
-                <span style={{display: 'flex', position: 'relative', justifyContent: 'center', padding: '0px 0px 20px 0px'}}>
-                    {project.blurbs.map((__, idx) => {
-                        return <button style={{backgroundColor: 'rgba(76, 80, 79, 0.42)', height: 15, width: 15, borderRadius: '100%', margin: ' 0 0.2rem', padding: '0px'}} key={idx} onClick={() => setCurrentBlurbIndex(idx)}></button>
-                    })}
-                </span> 
             </Box>
                         
         </section>
