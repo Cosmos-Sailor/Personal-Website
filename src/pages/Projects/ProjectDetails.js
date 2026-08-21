@@ -10,7 +10,7 @@ const ProjectDetails = () => {
     const [project, setProject] = useState("")
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
     const [currentBlurbIndex, setCurrentBlurbIndex] = useState(0)
-    //const [currentCarouselText, setCurrentCarouselText] = useState("")
+    const [currentCarouselText, setCurrentCarouselText] = useState("")
 
     useEffect(() => {
         setProject(projectConfig.find((item) => item.id === projectId))
@@ -21,28 +21,23 @@ const ProjectDetails = () => {
     }
 
     
-    // useEffect(() => {
-    //     async function getText(fileName, type) {
-    //         try {
-    //             const response = await fetch(fileName)
-    //             const text = await response.text()
+    useEffect(() => {
+        async function getText(fileName) {
+            try {
+                const response = await fetch(fileName)
+                const text = await response.text()
 
-    //             setCurrentCarouselText(text)
-    //         } catch (error) {
-    //             console.error("error fetching text:", error)
-    //         }
-    //     }
+                setCurrentCarouselText(text)
+            } catch (error) {
+                console.error("error fetching text:", error)
+            }
+        }
 
-    //     if(project) {
-    //         getText(project.blurbs[currentBlurbIndex].link, "currentCarouselText")
-    //     }
+        if(project) {
+            getText(project.blurbs[currentBlurbIndex].link)
+        }
+    }, [project])
 
-    // }, [project])
-    function getText(fileName) {
-            const response = await fetch(fileName)
-            const text = await response.text()
-            return text
-    }
 
     const handleNextImage = () => {
         setCurrentImageIndex(currentImageIndex === project.images.length - 1 ? 0: currentImageIndex + 1)
@@ -120,7 +115,7 @@ const ProjectDetails = () => {
                     <BsArrowLeftCircleFill onClick={handlePrevBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                     {project.blurbs.map((blurb, index) => (
                         <div style={{borderRadius: '0.5rem', boxShadow: '0px 0px 7px #666', maxWidth: '60%', maxHeight: '400px'}}>
-                            <p className={currentBlurbIndex === index ? "slide" : "slide-hidden"}>{getText(blurb.link)}</p>
+                            <p className={currentBlurbIndex === index ? "slide" : "slide-hidden"}>{currentCarouselText}</p>
                         </div>
                     ))}
                     <BsArrowRightCircleFill onClick={handleNextBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
