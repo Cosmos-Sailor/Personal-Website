@@ -21,7 +21,7 @@ const ProjectDetails = () => {
     }
 
     
-    useEffect((index) => {
+    useEffect(() => {
         async function getText(fileName, type) {
             try {
                 const response = await fetch(fileName)
@@ -34,7 +34,7 @@ const ProjectDetails = () => {
         }
 
         if(project) {
-            getText(index, "currentCarouselText")
+            getText(project.blurbs[currentBlurbIndex].link, "currentCarouselText")
         }
 
     }, [project])
