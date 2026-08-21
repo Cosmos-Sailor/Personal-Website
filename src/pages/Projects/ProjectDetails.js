@@ -21,22 +21,16 @@ const ProjectDetails = () => {
     }
 
     
-    useEffect(() => {
-        async function getText(fileName) {
-            try {
-                const response = await fetch(fileName)
-                const text = await response.text()
+    async function getText(fileName) {
+        try {
+            const response = await fetch(fileName)
+            const text = await response.text()
 
-                setCurrentCarouselText(text)
-            } catch (error) {
-                console.error("error fetching text:", error)
-            }
+            setCurrentCarouselText(text)
+        } catch (error) {
+            console.error("error fetching text:", error)
         }
-
-        if(project) {
-            getText(project.blurbs[currentBlurbIndex].link)
-        }
-    }, [project])
+    }
 
 
     const handleNextImage = () => {
@@ -49,10 +43,12 @@ const ProjectDetails = () => {
 
     const handleNextBlurb = () => {
         setCurrentBlurbIndex(currentBlurbIndex === project.blurbs.length - 1 ? 0: currentBlurbIndex + 1)
+        getText(project.blurbs[currentBlurbIndex].link)
       }
 
     const handlePrevBlurb = () => {
         setCurrentBlurbIndex(currentBlurbIndex === 0 ? project.blurbs.length - 1: currentBlurbIndex -1)
+        getText(project.blurbs[currentBlurbIndex].link)
     }
 
     // <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
