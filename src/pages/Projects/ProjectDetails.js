@@ -84,11 +84,7 @@ const ProjectDetails = () => {
                 <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>Project Visuals</h3>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <BsArrowLeftCircleFill onClick={handlePrev} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
-                    {project.blurbs.map((blurb, index) => (
-                        <div style={{borderRadius: '0.5rem', boxShadow: '0px 0px 7px #666', maxWidth: '60%', maxHeight: '4000px'}}>
-                            <p> className={currentIndex === index ? "slide" : "slide-hidden"} key={index} style={{maxWidth: '100%'}} {blurb.link} </p>
-                        </div>
-                    ))}
+
                     <BsArrowRightCircleFill onClick={handleNext} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                 </div>
                 <h3 style={{display: 'flex',  justifyContent: 'center', fontSize: 20}}>{project.blurbs[currentIndex].name}</h3>
