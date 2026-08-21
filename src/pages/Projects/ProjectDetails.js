@@ -37,6 +37,7 @@ const ProjectDetails = () => {
     //         <h3 style={{fontSize: 16, marginBottom: '0px', fontWeight: 'normal', whiteSpace: 'pre-wrap'}}>{reflection}</h3>
     //     </div>
     // </Box>
+    //className={currentIndex === index ? "slide" : "slide-hidden"} key={index} style={{maxWidth: '100%'}}
     
 
     return (
@@ -86,7 +87,7 @@ const ProjectDetails = () => {
                     <BsArrowLeftCircleFill onClick={handlePrev} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                     {project.blurbs.map((blurb, index) => (
                         <div style={{borderRadius: '0.5rem', boxShadow: '0px 0px 7px #666', maxWidth: '60%', maxHeight: '4000px'}}>
-                            <h3 className={currentIndex === index ? "slide" : "slide-hidden"} key={index} style={{maxWidth: '100%'}}> {blurb.link} </h3>
+                            <p> {blurb.link} </p>
                         </div>
                     ))}
                     <BsArrowRightCircleFill onClick={handleNext} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
