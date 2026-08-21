@@ -9,7 +9,7 @@ const ProjectDetails = () => {
     const { projectId } = useParams();
     const [project, setProject] = useState("")
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
-    //const [currentBlurbIndex, setCurrentBlurbIndex] = useState(0)
+    const [currentBlurbIndex, setCurrentBlurbIndex] = useState(0)
 
     useEffect(() => {
         setProject(projectConfig.find((item) => item.id === projectId))
@@ -27,13 +27,13 @@ const ProjectDetails = () => {
         setCurrentImageIndex(currentImageIndex === 0 ? project.images.length - 1: currentImageIndex -1)
     }
 
-    // const handleNextBlurb = () => {
-    //     setCurrentBlurbIndex(currentBlurbIndex === project.blurbs.length - 1 ? 0: currentBlurbIndex + 1)
-    //   }
+    const handleNextBlurb = () => {
+        setCurrentBlurbIndex(currentBlurbIndex === project.blurbs.length - 1 ? 0: currentBlurbIndex + 1)
+      }
 
-    // const handlePrevBlurb = () => {
-    //     setCurrentBlurbIndex(currentBlurbIndex === 0 ? project.blurbs.length - 1: currentBlurbIndex -1)
-    // }
+    const handlePrevBlurb = () => {
+        setCurrentBlurbIndex(currentBlurbIndex === 0 ? project.blurbs.length - 1: currentBlurbIndex -1)
+    }
 
     // <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
     // <h3 style={{fontSize: 46, padding: '10px', marginBottom: '10px'}}>Project Overview</h3>
