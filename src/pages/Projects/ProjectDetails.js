@@ -115,7 +115,6 @@ const ProjectDetails = () => {
                 <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>{"Want to Learn More? Click here!"}</h3>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>                
                     {project.resources.map((resource, index) => (
-                            <iframe src={resource.link} target="_blank" title="This is my resume" style={{width: '30%', height: '100px'}} />
                             <p style={{textAlign: 'center', padding: '15px', fontSize:18, lineHeight: 1.6, maxWidth: '80%'}}>{resource.description}</p>
                     ))}
                 </div>
