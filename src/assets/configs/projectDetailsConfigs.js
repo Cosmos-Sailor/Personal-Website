@@ -16,6 +16,7 @@ import semanticMethodology from "../projectDescriptions/semanticMethodology.txt"
 import semanticReflection from "../projectDescriptions/semanticReflection.txt"
 
 import MQP_Definition from "../projectDescriptions/MQP Definition.txt"
+import MQP_Definition from "../projectDescriptions/terrawardenDrone.txt"
 import terrawardenDescription from "../projectDescriptions/terrawardenDescription.txt"
 import terrawardenMethodology from "../projectDescriptions/terrawardenMethodology.txt"
 import terrawardenReflection from "../projectDescriptions/terrawardenReflection.txt"
