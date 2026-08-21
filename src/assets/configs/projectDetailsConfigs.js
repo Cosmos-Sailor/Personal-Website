@@ -32,16 +32,13 @@ const projectConfig = [
         myRoles: "Manipulator Design and Controls",
         teamSize:"6",
         timeline:"April 2024 - May 2025",
-        description: terrawardenDescription,
-        methodology: terrawardenMethodology,
-        reflection: terrawardenReflection,
         blurbs: [
             {name: "What Does MQP Stand For?", link: terrawardenDescription},
             {name: "The Terrawarden Drone", link: terrawardenMethodology},
             {name: "My Role", link: terrawardenReflection},
             {name: "Results and Reflections", link: terrawardenMethodology}],
         images: [
-            {name: "Project Overview", link: terrawardenVideo, media: "video"},
+            {name: "Final Project Video", link: terrawardenVideo, media: "video"},
             {name: "Full Drone CAD Render", link: droneRender, media: "image"}, 
             {name: "Drone Flying Indoors", link: droneReal, media: "image"},
             {name: "Arm Render", link: terrawardenArm, media: "image"}],
