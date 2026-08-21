@@ -37,9 +37,9 @@ const projectConfig = [
         reflection: terrawardenReflection,
         blurbs: [
             {name: "What Does MQP Stand For?", link: droneRender, media: "image"},
-            {name: "The Terrawarden Drone", link: droneRender, media: "image"},
-            {name: "My Role", link: droneRender, media: "image"},
-            {name: "Test", link: droneRender, media: "image"},
+            {name: "The Terrawarden Drone", link: droneReal, media: "image"},
+            {name: "My Role", link: droneReal, media: "image"},
+            {name: "Test", link: terrawardenArm, media: "image"},
             {name: "Results and Reflections", link: droneRender, media: "image"}],
         images: [
             {name: "Project Overview", link: terrawardenVideo, media: "video"},
