@@ -36,10 +36,10 @@ const projectConfig = [
         methodology: terrawardenMethodology,
         reflection: terrawardenReflection,
         blurbs: [
-            {name: "What Does MQP Stand For?", link: terrawardenDescription},
-            {name: "The Terrawarden Drone", link: terrawardenDescription},
-            {name: "My Role", link: terrawardenDescription},
-            {name: "Results and Reflections", link: terrawardenDescription},],
+            {name: "What Does MQP Stand For?", link: "Test 1"},
+            {name: "The Terrawarden Drone", link: "Test 2"},
+            {name: "My Role", link: "Test 3"},
+            {name: "Results and Reflections", link: "Test 4"},],
         images: [
             {name: "Project Overview", link: terrawardenVideo, media: "video"},
             {name: "Full Drone CAD Render", link: droneRender, media: "image"}, 
