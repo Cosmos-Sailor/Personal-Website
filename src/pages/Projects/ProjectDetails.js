@@ -110,7 +110,7 @@ const ProjectDetails = () => {
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <BsArrowLeftCircleFill onClick={handlePrevBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                     {project.blurbs.map((blurb, index) => (
-                        <div style={{borderRadius: '0.5rem', boxShadow: '0px 0px 7px #666', maxWidth: '60%', maxHeight: '400px'}}>
+                        <div style={{borderRadius: '0.5rem', boxShadow: '0px 0px 7px #666', maxWidth: '80%', maxHeight: '400px'}}>
                             <p className={currentBlurbIndex === index ? "slide" : "slide-hidden"}>{currentCarouselText}</p>
                         </div>
                     ))}
