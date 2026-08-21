@@ -13,9 +13,8 @@ import transformed from "../images/transformed.png"
 
 import MQP_Definition from "../projectDescriptions/MQP Definition.txt"
 import terrawardenDrone from "../projectDescriptions/terrawardenDrone.txt"
+import myRole from "../projectDescriptions/myRole.txt"
 import terrawardenDescription from "../projectDescriptions/terrawardenDescription.txt"
-import terrawardenMethodology from "../projectDescriptions/terrawardenMethodology.txt"
-import terrawardenReflection from "../projectDescriptions/terrawardenReflection.txt"
 
 import segmentationVideo from "../videos/segmentation.mp4"
 import terrawardenVideo from "../videos/terrawarden.mp4"
@@ -31,8 +30,8 @@ const projectConfig = [
         blurbs: [
             {name: "What Does MQP Stand For?", link: MQP_Definition},
             {name: "The Terrawarden Drone", link: terrawardenDrone},
-            {name: "My Role", link: terrawardenReflection},
-            {name: "Results and Reflections", link: terrawardenMethodology}],
+            {name: "My Role", link: myRole},
+            {name: "Results and Reflections", link: myRole}],
         images: [
             {name: "Final Project Video", link: terrawardenVideo, media: "video"},
             {name: "Full Drone CAD Render", link: droneRender, media: "image"}, 
