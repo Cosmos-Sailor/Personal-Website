@@ -32,6 +32,8 @@ const ProjectDetails = () => {
         }
     }
 
+    getText(project.blurbs[currentBlurbIndex].link)
+
 
     const handleNextImage = () => {
         setCurrentImageIndex(currentImageIndex === project.images.length - 1 ? 0: currentImageIndex + 1)
