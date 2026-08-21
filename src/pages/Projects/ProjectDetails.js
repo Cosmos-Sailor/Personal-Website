@@ -93,6 +93,14 @@ const ProjectDetails = () => {
                 <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>Project Visuals</h3>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <BsArrowLeftCircleFill onClick={handlePrevBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
+                    {project.blurbs.map((blurb, index) => (
+                        <div style={{borderRadius: '0.5rem', boxShadow: '0px 0px 7px #666', maxWidth: '60%', maxHeight: '400px'}}>
+                            {blurb.media === 'image' ? ( 
+                                <img className={currentBlurbIndex === index ? "slide" : "slide-hidden"} src={blurb.link} alt={blurb.name} key={index} style={{maxWidth: '100%'}}></img>) :
+                                <video className={currentBlurbIndex === index ? "slide" : "slide-hidden"} src={blurb.link} alt={blurb.name} controls key={index} style={{maxWidth: '100%'}}></video>
+                            }
+                        </div>
+                    ))}
                     <BsArrowRightCircleFill onClick={handleNextBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                 </div>
                 <span style={{display: 'flex', position: 'relative', justifyContent: 'center', padding: '0px 0px 20px 0px'}}>
