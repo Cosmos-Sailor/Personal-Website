@@ -15,7 +15,7 @@ import semanticDescription from "../projectDescriptions/semanticDescription.txt"
 import semanticMethodology from "../projectDescriptions/semanticMethodology.txt"
 import semanticReflection from "../projectDescriptions/semanticReflection.txt"
 
-import terrawardenDescription from "../projectDescriptions/terrawardenDescription.txt"
+import MQP_Definition from "../projectDescriptions/MQP Definition.txt"
 import terrawardenMethodology from "../projectDescriptions/terrawardenMethodology.txt"
 import terrawardenReflection from "../projectDescriptions/terrawardenReflection.txt"
 
@@ -33,7 +33,7 @@ const projectConfig = [
         teamSize:"6",
         timeline:"April 2024 - May 2025",
         blurbs: [
-            {name: "What Does MQP Stand For?", link: terrawardenDescription},
+            {name: "What Does MQP Stand For?", link: MQP_Definition},
             {name: "The Terrawarden Drone", link: terrawardenMethodology},
             {name: "My Role", link: terrawardenReflection},
             {name: "Results and Reflections", link: terrawardenMethodology}],
