@@ -8,7 +8,8 @@ import "./ProjectDetails.css"
 const ProjectDetails = () => {
     const { projectId } = useParams();
     const [project, setProject] = useState("")
-    const [currentIndex, setCurrentIndex] = useState(0)
+    const [currentImageIndex, setCurrentImageIndex] = useState(0)
+    const [currentBlurbIndex, setCurrentBlurbIndex] = useState(0)
 
     useEffect(() => {
         setProject(projectConfig.find((item) => item.id === projectId))
@@ -18,12 +19,20 @@ const ProjectDetails = () => {
         return <p>Project not found!</p>;
     }
 
-    const handleNext = () => {
-        setCurrentIndex(currentIndex === project.images.length - 1 ? 0: currentIndex + 1)
+    const handleNextImage = () => {
+        setCurrentImageIndex(currentImageIndex === project.images.length - 1 ? 0: currentImageIndex + 1)
       }
 
-    const handlePrev = () => {
-        setCurrentIndex(currentIndex === 0 ? project.images.length - 1: currentIndex -1)
+    const handlePrevImage = () => {
+        setCurrentImageIndex(currentImageIndex === 0 ? project.images.length - 1: currentImageIndex -1)
+    }
+
+    const handleNextBlurb = () => {
+        setCurrentBlurbIndex(currentBlurbIndex === project.blurbs.length - 1 ? 0: currentBlurbIndex + 1)
+      }
+
+    const handlePrevBlurb = () => {
+        setCurrentBlurbIndex(currentBlurbIndex === 0 ? project.blurbs.length - 1: currentBlurbIndex -1)
     }
 
     // <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
@@ -61,42 +70,42 @@ const ProjectDetails = () => {
             <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
                 <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>Project Visuals</h3>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <BsArrowLeftCircleFill onClick={handlePrev} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
+                    <BsArrowLeftCircleFill onClick={handlePrevImage} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                     {project.images.map((image, index) => (
                         <div style={{borderRadius: '0.5rem', boxShadow: '0px 0px 7px #666', maxWidth: '60%', maxHeight: '400px'}}>
                             {image.media === 'image' ? ( 
-                                <img className={currentIndex === index ? "slide" : "slide-hidden"} src={image.link} alt={image.name} key={index} style={{maxWidth: '100%'}}></img>) :
-                                <video className={currentIndex === index ? "slide" : "slide-hidden"} src={image.link} alt={image.name} controls key={index} style={{maxWidth: '100%'}}></video>
+                                <img className={currentImageIndex === index ? "slide" : "slide-hidden"} src={image.link} alt={image.name} key={index} style={{maxWidth: '100%'}}></img>) :
+                                <video className={currentImageIndex === index ? "slide" : "slide-hidden"} src={image.link} alt={image.name} controls key={index} style={{maxWidth: '100%'}}></video>
                             }
                         </div>
                     ))}
-                    <BsArrowRightCircleFill onClick={handleNext} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
+                    <BsArrowRightCircleFill onClick={handleNextImage} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                 </div>
-                <h3 style={{display: 'flex',  justifyContent: 'center', fontSize: 20}}>{project.images[currentIndex].name}</h3>
+                <h3 style={{display: 'flex',  justifyContent: 'center', fontSize: 20}}>{project.images[currentImageIndex].name}</h3>
                 <span style={{display: 'flex', position: 'relative', justifyContent: 'center', padding: '0px 0px 20px 0px'}}>
                     {project.images.map((__, idx) => {
-                        return <button style={{backgroundColor: 'rgba(76, 80, 79, 0.42)', height: 15, width: 15, borderRadius: '100%', margin: ' 0 0.2rem', padding: '0px'}} key={idx} onClick={() => setCurrentIndex(idx)}></button>
+                        return <button style={{backgroundColor: 'rgba(76, 80, 79, 0.42)', height: 15, width: 15, borderRadius: '100%', margin: ' 0 0.2rem', padding: '0px'}} key={idx} onClick={() => setcurrentImageIndex(idx)}></button>
                     })}
                 </span>
             </Box>
             <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
                 <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>Project Visuals</h3>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <BsArrowLeftCircleFill onClick={handlePrev} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
+                    <BsArrowLeftCircleFill onClick={handlePrevBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                     {project.blurbs.map((blurb, index) => (
                         <div style={{borderRadius: '0.5rem', boxShadow: '0px 0px 7px #666', maxWidth: '60%', maxHeight: '400px'}}>
                             {blurb.media === 'image' ? ( 
-                                <img className={currentIndex === index ? "slide" : "slide-hidden"} src={blurb.link} alt={blurb.name} key={index} style={{maxWidth: '100%'}}></img>) :
-                                <video className={currentIndex === index ? "slide" : "slide-hidden"} src={blurb.link} alt={blurb.name} controls key={index} style={{maxWidth: '100%'}}></video>
+                                <img className={currentBlurbIndex === index ? "slide" : "slide-hidden"} src={blurb.link} alt={blurb.name} key={index} style={{maxWidth: '100%'}}></img>) :
+                                <video className={currentBlurbIndex === index ? "slide" : "slide-hidden"} src={blurb.link} alt={blurb.name} controls key={index} style={{maxWidth: '100%'}}></video>
                             }
                         </div>
                     ))}
-                    <BsArrowRightCircleFill onClick={handleNext} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
+                    <BsArrowRightCircleFill onClick={handleNextBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                 </div>
-                <h3 style={{display: 'flex',  justifyContent: 'center', fontSize: 20}}>{project.blurb[currentIndex].name}</h3>
+                <h3 style={{display: 'flex',  justifyContent: 'center', fontSize: 20}}>{project.blurb[currentBlurbIndex].name}</h3>
                 <span style={{display: 'flex', position: 'relative', justifyContent: 'center', padding: '0px 0px 20px 0px'}}>
                     {project.blurbs.map((__, idx) => {
-                        return <button style={{backgroundColor: 'rgba(76, 80, 79, 0.42)', height: 15, width: 15, borderRadius: '100%', margin: ' 0 0.2rem', padding: '0px'}} key={idx} onClick={() => setCurrentIndex(idx)}></button>
+                        return <button style={{backgroundColor: 'rgba(76, 80, 79, 0.42)', height: 15, width: 15, borderRadius: '100%', margin: ' 0 0.2rem', padding: '0px'}} key={idx} onClick={() => setCurrentBlurbIndex(idx)}></button>
                     })}
                 </span>
             </Box>
