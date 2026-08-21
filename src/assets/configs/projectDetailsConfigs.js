@@ -12,7 +12,7 @@ import trainloss from "../images/trainloss.png"
 import transformed from "../images/transformed.png"
 
 import MQP_Definition from "../projectDescriptions/MQP Definition.txt"
-import MQP_Definition from "../projectDescriptions/terrawardenDrone.txt"
+import terrawardenDrone from "../projectDescriptions/terrawardenDrone.txt"
 import terrawardenDescription from "../projectDescriptions/terrawardenDescription.txt"
 import terrawardenMethodology from "../projectDescriptions/terrawardenMethodology.txt"
 import terrawardenReflection from "../projectDescriptions/terrawardenReflection.txt"
@@ -30,7 +30,7 @@ const projectConfig = [
         timeline:"April 2024 - May 2025",
         blurbs: [
             {name: "What Does MQP Stand For?", link: MQP_Definition},
-            {name: "The Terrawarden Drone", link: terrawardenMethodology},
+            {name: "The Terrawarden Drone", link: terrawardenDrone},
             {name: "My Role", link: terrawardenReflection},
             {name: "Results and Reflections", link: terrawardenMethodology}],
         images: [
