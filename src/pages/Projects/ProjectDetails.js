@@ -38,16 +38,11 @@ const ProjectDetails = () => {
     //     }
 
     // }, [project])
-    async function getText(fileName) {
-            try {
-                const response = await fetch(fileName)
-                const text = await response.text()
-                return text
-
-            } catch (error) {
-                console.error("error fetching text:", error)
-            }
-        }
+    function getText(fileName) {
+            const response = await fetch(fileName)
+            const text = await response.text()
+            return text
+    }
 
     const handleNextImage = () => {
         setCurrentImageIndex(currentImageIndex === project.images.length - 1 ? 0: currentImageIndex + 1)
