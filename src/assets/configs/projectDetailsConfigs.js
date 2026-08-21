@@ -43,9 +43,10 @@ const projectConfig = [
             {name: "Full Drone CAD Render", link: droneRender, media: "image"}, 
             {name: "Drone Flying Indoors", link: droneReal, media: "image"},
             {name: "Arm Render", link: terrawardenArm, media: "image"}],
-        links: [
-            { name: "GitHub", url: "https://github.com/Terrawarden-MQP" },
-            { name: "Engineering Paper", url: "https://github.com/example/project1" }
+        resources: [
+            {description: "paper", link: terrawardenDescription},
+            {description: "poster", link: terrawardenDescription},
+            {description: "codebase", link: terrawardenDescription},
         ],
     },
     {
@@ -55,9 +56,6 @@ const projectConfig = [
         myRoles: "Dataset Augmentation and Network Design",
         teamSize:"3",
         timeline:"October 2024",
-        description: semanticDescription,
-        methodology: semanticMethodology,
-        reflection: semanticReflection,
         blurbs: [
             {name: "What is Semantic Segmentation?", link: terrawardenDescription},
             {name: "My Role", link: terrawardenDescription},
@@ -68,7 +66,11 @@ const projectConfig = [
             {name: "Model Output from Validation Set (Left: Model Output, Center: Mask from Dataset, Right: Original Image)", link: modelout, media: "image"},
             {name: "Graph of Training Loss over Epochs", link: trainloss, media: "image"},
             {name: "Sample image augmented in Pytorch", link: transformed, media: "image"}
-        ]
+        ],
+        resources: [
+            {description: "paper", link: terrawardenDescription},
+            {description: "codebase", link: terrawardenDescription},
+        ],
     },
     {
         id: "4DOF",
@@ -77,17 +79,16 @@ const projectConfig = [
         myRoles: "Lead Programmer",
         teamSize:"3",
         timeline:"January 2024 - March 2024",
-        description: underConstruction,
-        methodology: underConstruction,
-        reflection: underConstruction,
         blurbs: [
             {name: "Project Overview", link: terrawardenDescription},
             {name: "My Role", link: terrawardenDescription},
             {name: "Results and Reflections", link: terrawardenDescription}],
         images: [
             {name: "Full drone CAD", link: drone}, {name: "pic2", link: amcl}, {name: "pic3", link: arm}],
-        links: [
-            { name: "GitHub", url: "https://github.com/example/project1" },
+        resources: [
+            {description: "paper", link: terrawardenDescription},
+            {description: "video", link: terrawardenDescription},
+            {description: "codebase", link: terrawardenDescription},
         ],
     },
     {
@@ -97,21 +98,20 @@ const projectConfig = [
         myRoles: "Lead Programmer",
         teamSize:"3",
         timeline:"March 2024 - May 2024",
-        description: underConstruction,
-        methodology: underConstruction,
-        reflection: underConstruction,
         blurbs: [
             {name: "What is SLAM and AMCL", link: terrawardenDescription},
             {name: "Project Overview", link: terrawardenDescription},
             {name: "My Role", link: terrawardenDescription},
             {name: "Results and Reflections", link: terrawardenDescription}],
         images: [
-            {name: "Full drone CAD", link: drone}, {name: "pic2", link: amcl}, {name: "pic3", link: arm}],
-        links: [
-            { name: "GitHub", url: "https://github.com/example/project1" },
+            {name: "Full drone CAD", link: drone}, 
+            {name: "pic2", link: amcl}, 
+            {name: "pic3", link: arm}],
+        resources: [
+            {description: "paper", link: terrawardenDescription},
+            {description: "codebase", link: terrawardenDescription},
         ],
     },
-    // Add more projects as needed
 ];
 
 export default projectConfig;
