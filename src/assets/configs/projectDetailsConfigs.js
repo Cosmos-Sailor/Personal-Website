@@ -39,6 +39,7 @@ const projectConfig = [
             {name: "What Does MQP Stand For?", link: droneRender, media: "image"},
             {name: "The Terrawarden Drone", link: droneRender, media: "image"},
             {name: "My Role", link: droneRender, media: "image"},
+            {name: "Test", link: droneRender, media: "image"},
             {name: "Results and Reflections", link: droneRender, media: "image"}],
         images: [
             {name: "Project Overview", link: terrawardenVideo, media: "video"},
