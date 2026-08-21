@@ -79,21 +79,28 @@ const ProjectDetails = () => {
                     })}
                 </span>
             </Box>
-
             <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
                 <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>Project Visuals</h3>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <BsArrowLeftCircleFill onClick={handlePrev} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
-
+                    {project.images.map((image, index) => (
+                        <div style={{borderRadius: '0.5rem', boxShadow: '0px 0px 7px #666', maxWidth: '60%', maxHeight: '400px'}}>
+                            {image.media === 'image' ? ( 
+                                <img className={currentIndex === index ? "slide" : "slide-hidden"} src={image.link} alt={image.name} key={index} style={{maxWidth: '100%'}}></img>) :
+                                <video className={currentIndex === index ? "slide" : "slide-hidden"} src={image.link} alt={image.name} controls key={index} style={{maxWidth: '100%'}}></video>
+                            }
+                        </div>
+                    ))}
                     <BsArrowRightCircleFill onClick={handleNext} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                 </div>
-                <h3 style={{display: 'flex',  justifyContent: 'center', fontSize: 20}}>{project.blurbs[currentIndex].name}</h3>
+                <h3 style={{display: 'flex',  justifyContent: 'center', fontSize: 20}}>{project.images[currentIndex].name}</h3>
                 <span style={{display: 'flex', position: 'relative', justifyContent: 'center', padding: '0px 0px 20px 0px'}}>
-                    {project.blurb.map((__, idx) => {
+                    {project.images.map((__, idx) => {
                         return <button style={{backgroundColor: 'rgba(76, 80, 79, 0.42)', height: 15, width: 15, borderRadius: '100%', margin: ' 0 0.2rem', padding: '0px'}} key={idx} onClick={() => setCurrentIndex(idx)}></button>
                     })}
                 </span>
             </Box>
+
         </section>
     );
 };
