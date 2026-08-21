@@ -39,7 +39,7 @@ const projectConfig = [
             {name: "What Does MQP Stand For?", link: droneRender, media: "image"},
             {name: "The Terrawarden Drone", link: droneRender, media: "image"},
             {name: "My Role", link: droneRender, media: "image"},
-            {name: "Results and Reflections", link: droneRender, media: "image"},],
+            {name: "Results and Reflections", link: droneRender, media: "image"}],
         images: [
             {name: "Project Overview", link: terrawardenVideo, media: "video"},
             {name: "Full Drone CAD Render", link: droneRender, media: "image"}, 
@@ -63,7 +63,7 @@ const projectConfig = [
         blurbs: [
             {name: "What is Semantic Segmentation?", link: terrawardenDescription},
             {name: "My Role", link: terrawardenDescription},
-            {name: "Results and Reflections", link: terrawardenDescription},],
+            {name: "Results and Reflections", link: terrawardenDescription}],
         images: [
             {name: "Frame from segmented video", link: segmentation, media: "image"},
             {name: "Semantic Segmentation Mask Applied to Video", link: segmentationVideo, media: "video"},  
@@ -85,7 +85,7 @@ const projectConfig = [
         blurbs: [
             {name: "Project Overview", link: terrawardenDescription},
             {name: "My Role", link: terrawardenDescription},
-            {name: "Results and Reflections", link: terrawardenDescription},],
+            {name: "Results and Reflections", link: terrawardenDescription}],
         images: [
             {name: "Full drone CAD", link: drone}, {name: "pic2", link: amcl}, {name: "pic3", link: arm}],
         links: [
@@ -106,7 +106,7 @@ const projectConfig = [
             {name: "What is SLAM and AMCL", link: terrawardenDescription},
             {name: "Project Overview", link: terrawardenDescription},
             {name: "My Role", link: terrawardenDescription},
-            {name: "Results and Reflections", link: terrawardenDescription},],
+            {name: "Results and Reflections", link: terrawardenDescription}],
         images: [
             {name: "Full drone CAD", link: drone}, {name: "pic2", link: amcl}, {name: "pic3", link: arm}],
         links: [
