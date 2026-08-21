@@ -27,14 +27,14 @@ const ProjectDetails = () => {
                 const response = await fetch(fileName)
                 const text = await response.text()
 
-                currentCarouselText setProjectDescription(text)
+                currentCarouselText setCurrentCarouselText(text)
             } catch (error) {
                 console.error("error fetching text:", error)
             }
         }
 
         if(project) {
-            getText(index, "currentText")
+            getText(index, "currentCarouselText")
         }
 
     }, [project])
@@ -117,7 +117,7 @@ const ProjectDetails = () => {
                     <BsArrowLeftCircleFill onClick={handlePrevBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                     {project.blurbs.map((blurb, index) => (
                         <div style={{borderRadius: '0.5rem', boxShadow: '0px 0px 7px #666', maxWidth: '60%', maxHeight: '400px'}}>
-                            <p className={currentBlurbIndex === index ? "slide" : "slide-hidden"}>{currentText}</p>
+                            <p className={currentBlurbIndex === index ? "slide" : "slide-hidden"}>{currentCarouselText}</p>
                         </div>
                     ))}
                     <BsArrowRightCircleFill onClick={handleNextBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
