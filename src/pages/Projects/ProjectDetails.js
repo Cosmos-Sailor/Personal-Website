@@ -96,11 +96,6 @@ const ProjectDetails = () => {
                     <BsArrowRightCircleFill onClick={handleNextBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                 </div>
                 <h3 style={{display: 'flex',  justifyContent: 'center', fontSize: 20}}>{project.blurb[currentBlurbIndex].name}</h3>
-                <span style={{display: 'flex', position: 'relative', justifyContent: 'center', padding: '0px 0px 20px 0px'}}>
-                    {project.blurbs.map((__, idx) => {
-                        return <button style={{backgroundColor: 'rgba(76, 80, 79, 0.42)', height: 15, width: 15, borderRadius: '100%', margin: ' 0 0.2rem', padding: '0px'}} key={idx} onClick={() => setCurrentBlurbIndex(idx)}></button>
-                    })}
-                </span>
             </Box>
                         
         </section>
