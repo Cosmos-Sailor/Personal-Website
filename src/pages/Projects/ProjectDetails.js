@@ -27,7 +27,7 @@ const ProjectDetails = () => {
                 const response = await fetch(fileName)
                 const text = await response.text()
 
-                currentCarouselText setCurrentCarouselText(text)
+                setCurrentCarouselText(text)
             } catch (error) {
                 console.error("error fetching text:", error)
             }
