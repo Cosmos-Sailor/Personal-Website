@@ -4,6 +4,8 @@ import { Box } from '@mui/material';
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill} from 'react-icons/bs';
 import projectConfig from '../../assets/configs/projectDetailsConfigs'
 import "./ProjectDetails.css"
+import { Grid2 } from '@mui/material';
+import CardItem from '../../components/Cards/CardItem';
 
 const ProjectDetails = () => {
     const { projectId } = useParams();
