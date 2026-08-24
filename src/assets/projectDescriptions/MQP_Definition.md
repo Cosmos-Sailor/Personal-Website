@@ -6,7 +6,6 @@
     padding: '15px';
     font-size: '20px';
     line-height: 1.6;
-    max-width: '60%';
   }
 </style>
 
