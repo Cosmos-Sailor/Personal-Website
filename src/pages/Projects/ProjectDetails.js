@@ -4,6 +4,9 @@ import { Box } from '@mui/material';
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill} from 'react-icons/bs';
 import projectConfig from '../../assets/configs/projectDetailsConfigs'
 import "./ProjectDetails.css"
+import ZeroMd from 'zero-md'
+
+customElements.define('zero-md', ZeroMd)
 
 const ProjectDetails = () => {
     const { projectId } = useParams();
@@ -52,6 +55,8 @@ const ProjectDetails = () => {
         setCurrentBlurbIndex(currentBlurbIndex === 0 ? project.blurbs.length - 1: currentBlurbIndex -1)
         getText(project.blurbs[currentBlurbIndex].link)
     }
+
+    //<p className={currentBlurbIndex === index ? "slide" : "slide-hidden"} style={{ textAlign: 'left', fontSize:18, lineHeight: 1.6, maxWidth: '80%'}}>{currentCarouselText}</p>
     
 
     return (
@@ -78,7 +83,7 @@ const ProjectDetails = () => {
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <BsArrowLeftCircleFill onClick={handlePrevBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                     {project.blurbs.map((blurb, index) => (
-                        <p className={currentBlurbIndex === index ? "slide" : "slide-hidden"} style={{ textAlign: 'left', fontSize:18, lineHeight: 1.6, maxWidth: '80%'}}>{currentCarouselText}</p>
+                        <zero-md className={currentBlurbIndex === index ? "slide" : "slide-hidden"} src={currentCarouselText} style={{ textAlign: 'left', fontSize:18, lineHeight: 1.6, maxWidth: '80%'}}></zero-md>
                     ))}
                     <BsArrowRightCircleFill onClick={handleNextBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                 </div>
