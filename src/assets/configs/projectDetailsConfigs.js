@@ -12,8 +12,8 @@ import trainloss from "../images/trainloss.png"
 import transformed from "../images/transformed.png"
 
 import MQP_Definition from "../projectDescriptions/MQP_Definition.md"
-import terrawardenDrone from "../projectDescriptions/terrawardenDrone.txt"
-import myRole from "../projectDescriptions/myRole.txt"
+import terrawardenDrone from "../projectDescriptions/terrawardenDrone.md"
+import myRole from "../projectDescriptions/myRole.md"
 import terrawardenDescription from "../projectDescriptions/terrawardenDescription.txt"
 
 import segmentationVideo from "../videos/segmentation.mp4"
