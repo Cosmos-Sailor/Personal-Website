@@ -13,7 +13,7 @@ const ProjectDetails = () => {
     const [project, setProject] = useState("")
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
     const [currentBlurbIndex, setCurrentBlurbIndex] = useState(0)
-    const [currentCarouselText, setCurrentCarouselText] = useState("")
+    //const [currentCarouselText, setCurrentCarouselText] = useState("")
 
     useEffect(() => {
         setProject(projectConfig.find((item) => item.id === projectId))
@@ -24,18 +24,18 @@ const ProjectDetails = () => {
     }
 
     
-    async function getText(fileName) {
-        try {
-            const response = await fetch(fileName)
-            const text = await response.text()
+    // async function getText(fileName) {
+    //     try {
+    //         const response = await fetch(fileName)
+    //         const text = await response.text()
 
-            setCurrentCarouselText(text)
-        } catch (error) {
-            console.error("error fetching text:", error)
-        }
-    }
+    //         setCurrentCarouselText(text)
+    //     } catch (error) {
+    //         console.error("error fetching text:", error)
+    //     }
+    // }
 
-    getText(project.blurbs[currentBlurbIndex].link)
+    //getText(project.blurbs[currentBlurbIndex].link)
 
 
     const handleNextImage = () => {
@@ -48,12 +48,12 @@ const ProjectDetails = () => {
 
     const handleNextBlurb = () => {
         setCurrentBlurbIndex(currentBlurbIndex === project.blurbs.length - 1 ? 0: currentBlurbIndex + 1)
-        getText(project.blurbs[currentBlurbIndex].link)
+        //getText(project.blurbs[currentBlurbIndex].link)
       }
 
     const handlePrevBlurb = () => {
         setCurrentBlurbIndex(currentBlurbIndex === 0 ? project.blurbs.length - 1: currentBlurbIndex -1)
-        getText(project.blurbs[currentBlurbIndex].link)
+        //getText(project.blurbs[currentBlurbIndex].link)
     }
 
     //<p className={currentBlurbIndex === index ? "slide" : "slide-hidden"} style={{ textAlign: 'left', fontSize:18, lineHeight: 1.6, maxWidth: '80%'}}>{currentCarouselText}</p>
