@@ -4,7 +4,7 @@ import { Box } from '@mui/material';
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill} from 'react-icons/bs';
 import projectConfig from '../../assets/configs/projectDetailsConfigs'
 import "./ProjectDetails.css"
-import ZeroMd from 'zero-md'
+import ZeroMd from 'https://cdn.jsdelivr.net/npm/zero-md@3'
 
 customElements.define('zero-md', ZeroMd)
 
