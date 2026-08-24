@@ -119,7 +119,7 @@ const ProjectDetails = () => {
 
             <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
                 <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>{"Want to Learn More? Click here!"}</h3>
-                <Grid2 container spacing={6} justifyContent="center">
+                <Grid2 container spacing={30} justifyContent="center">
                     <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>                
                         {project.resources.map((resource, index) => (
                                 <p style={{textAlign: 'center', padding: '15px', fontSize:18, lineHeight: 1.6, maxWidth: '80%'}}>{resource.description}</p>
