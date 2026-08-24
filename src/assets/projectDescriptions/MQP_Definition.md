@@ -1,7 +1,12 @@
 <style>
   .markdown-body {
     background-color: #f0f0f0 !important;
-    color: rgba(76, 80, 79, 0.42) !important;
+    color: rgba(0, 0, 0, 1) !important;
+    text-align: left;
+    padding: '15px';
+    font-size: '20px';
+    line-height: 1.6;
+    max-width: '80%';
   }
 </style>
 
