@@ -12,8 +12,6 @@ const MiniCard = (resource) => {
                 <Box sx={{ py: 0.3 }}>
                     <Box sx={{ display: 'flex', justifyContent: 'center', mt: 0.5 }}>
                         <IconButton
-                            title={resource.descripton}
-                            href={resource.link}
                             color="primary"
                             sx={{ color: '#263238', padding: 0.5 }}
                         >
