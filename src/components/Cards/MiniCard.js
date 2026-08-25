@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardMedia, CardContent, Box, IconButton} from '@mui/material';
+import { Card, CardMedia, CardContent, Box, Button} from '@mui/material';
 
 const MiniCard = ({item}) => {
     return (
@@ -9,14 +9,14 @@ const MiniCard = ({item}) => {
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1 }} />
                 <Box sx={{ py: 0.3 }}>
                     <Box sx={{ display: 'flex', justifyContent: 'center', mt: 0.5, whiteSpace: 'normal', wordWrap: 'break-word', variant: 'contained' }}>
-                        <IconButton
+                        <Button
                             title={item.description}
                             href={item.link}
                             color="primary"
                             sx={{ color: '#263238', padding: 0.5 }}
                         >
                             {item.description}
-                        </IconButton>
+                        </Button>
                     </Box>
                 </Box>
             </CardContent>
