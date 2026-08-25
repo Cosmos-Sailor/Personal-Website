@@ -8,7 +8,7 @@ const Projects = () => {
         <Grid2 container spacing={6} justifyContent="center">
             {projectConfig.map((item, index) => (
                 <Grid2 item="true" key={index} xs={12} sm={6} md={4}>
-                    <CardItem item={item} />
+                    <CardItem item={item}/>
                 </Grid2>
             ))}
         </Grid2>
