@@ -9,11 +9,14 @@ const MiniCard = ({item}) => {
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1 }} />
                 <Box sx={{ py: 0.3 }}>
                     <Box sx={{ display: 'flex', justifyContent: 'center', mt: 0.5 }}>
-                        <Button
-                             title={item.description}
+                        <IconButton
+                            title={item.description}
+                            href={item.link}
+                            color="primary"
+                            sx={{ color: '#263238', padding: 0.5 }}
                         >
                             {item.description}
-                        </Button>
+                        </IconButton>
                     </Box>
                 </Box>
             </CardContent>
