@@ -5,17 +5,18 @@ const MiniCard = (prop) => {
     return (
         <Card sx={{ width: 380, height: 450, m: 2, backgroundColor: '#F6F6F6', boxShadow: 3, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <CardMedia component={prop.media} sx={{src: `url(${prop.preview})`, height: 320, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}}/>
-            <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', p: 2 }}>
-                <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1 }} />
-                <Box sx={{ py: 0.3 }}>
-                    <Box sx={{ display: 'flex', justifyContent: 'center', mt: 0.5 }}>
-                        <Button
-                             title={prop.description}
-                        >
-                            {prop.description}
-                        </Button>
-                    </Box>
-                </Box>
+            <CardContent>
+                <Button
+                    variant="contained"
+                    sx={{
+                        color: 'red',
+                        backgroundColor: 'yellow',
+                        fontSize: '20px',
+                        display: 'block'
+                    }}
+                >
+                    TEST BUTTON
+                </Button>
             </CardContent>
         </Card>
     );
