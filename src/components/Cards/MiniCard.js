@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardMedia, CardContent, Box, Button} from '@mui/material';
+import { Card, CardMedia, CardContent, Box, IconButton} from '@mui/material';
 
 const MiniCard = ({item}) => {
     return (
