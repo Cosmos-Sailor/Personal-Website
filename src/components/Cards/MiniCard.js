@@ -10,14 +10,9 @@ const MiniCard = (prop) => {
                 <Box sx={{ py: 0.3 }}>
                     <Box sx={{ display: 'flex', justifyContent: 'center', mt: 0.5 }}>
                         <Button
-                            title={prop.description}
-                            color="primary"
-                            sx={{
-                                color: '#263238',
-                                padding: 0.5
-                            }}
+                             title={prop.description}
                         >
-                            {prop.icon}
+                            {prop.description}
                         </Button>
                     </Box>
                 </Box>
