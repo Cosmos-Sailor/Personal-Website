@@ -9,6 +9,7 @@ const MiniCard = (resource) => {
             <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', p: 2 }}>
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1 }} />
                 <IconButton
+                    key={resource.descripton}
                     title={resource.descripton}
                     href={resource.url}
                     color="primary"
