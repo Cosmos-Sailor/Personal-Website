@@ -1,25 +1,21 @@
 import React from 'react';
-import { Card, CardMedia, CardContent, Button} from '@mui/material';
+import { Card, CardMedia, CardContent, Box, Button} from '@mui/material';
 
 const MiniCard = ({item}) => {
     return (
         <Card sx={{ width: 380, height: 450, m: 2, backgroundColor: '#F6F6F6', boxShadow: 3, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <CardMedia component={item.media} sx={{src: `url(${item.preview})`, height: 320, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}}/>
-            <CardContent>
-                <p style={{ color: 'red', fontSize: '20px' }}>
-                    {item.description}
-                </p>
-
-                <Button
-                    variant="contained"
-                    sx={{
-                        color: 'red',
-                        backgroundColor: 'yellow',
-                        fontSize: '20px',
-                    }}
-                >
-                    {item.description}
-                </Button>
+            <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', p: 2 }}>
+                <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1 }} />
+                <Box sx={{ py: 0.3 }}>
+                    <Box sx={{ display: 'flex', justifyContent: 'center', mt: 0.5 }}>
+                        <Button
+                             title={item.description}
+                        >
+                            {item.description}
+                        </Button>
+                    </Box>
+                </Box>
             </CardContent>
         </Card>
     );
