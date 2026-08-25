@@ -110,10 +110,10 @@ const projectConfig = [
             {name: "pic2", link: amcl}, 
             {name: "pic3", link: arm}],
         resources: [
-            {icon: "Click here to read our paper!", preview: resume, media: "iframe", link: "/projects/SemanticSegmentation"},
-            {icon: "Click here to view our award-winning poster!", preview: resume, media: "iframe", link: "/projects/SemanticSegmentation"},
-            {icon: "Click here to view our open-source codebase!", preview: droneRender, media: "img", link: "/projects/SemanticSegmentation"},
-            {icon: "Click here to watch our final project video!", preview: terrawardenVideo, media: "video", link: "/projects/SemanticSegmentation"}
+            {description: "Click here to read our paper!",icon: "Click here to read our paper!", preview: resume, media: "iframe", link: "/projects/SemanticSegmentation"},
+            {description: "Click here to read our paper!",icon: "Click here to view our award-winning poster!", preview: resume, media: "iframe", link: "/projects/SemanticSegmentation"},
+            {description: "Click here to read our paper!",icon: "Click here to view our open-source codebase!", preview: droneRender, media: "img", link: "/projects/SemanticSegmentation"},
+            {description: "Click here to read our paper!",icon: "Click here to watch our final project video!", preview: terrawardenVideo, media: "video", link: "/projects/SemanticSegmentation"}
         ],
     },
 ];

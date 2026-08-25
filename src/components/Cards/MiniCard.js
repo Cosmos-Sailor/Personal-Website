@@ -9,7 +9,12 @@ const MiniCard = (prop) => {
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1 }} />
                 <Box sx={{ py: 0.3 }}>
                     <Box sx={{ display: 'flex', justifyContent: 'center', mt: 0.5 }}>
-                        <IconButton>
+                        <IconButton
+                            title={prop.description}
+                            href={link.url}
+                            color="primary"
+                            sx={{ color: '#263238', padding: 0.5 }}
+                            >
                             {prop.icon}
                         </IconButton>
                     </Box>
