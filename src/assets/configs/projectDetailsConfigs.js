@@ -42,10 +42,49 @@ const projectConfig = [
             {name: "Arm Render", link: terrawardenArm, media: "image"}
         ],
         resources: [
-            {description: "Click here to read our paper!", preview: resume, media: "iframe"},
-            {description: "Click here to view our award-winning poster!", preview: resume, media: "iframe"},
-            {description: "Click here to view our open-source codebase!", preview: droneRender, media: "img"},
-            {description: "Click here to watch our final project video!", preview: terrawardenVideo, media: "video"}
+            {
+                links: [
+                    {
+                        name: "Click here to read our paper!", 
+                        url: "/projects/Terrawarden", 
+                        icon: "Click here to read our paper!",
+                    },
+                ],
+                preview: resume,
+                media: "iframe"
+            },
+            {
+                links: [
+                    {
+                        name: "Click here to view our award-winning poster!", 
+                        url: "/projects/Terrawarden", 
+                        icon: "Click here to view our award-winning poster!",
+                    },
+                ],
+                preview: resume,
+                media: "iframe"
+            },
+            {
+                links: [
+                    {
+                        name: "Click here to view our open-source codebase!", 
+                        url: "/projects/Terrawarden", 
+                        icon: "Click here to view our open-source codebase!",
+                    },
+                ],
+                preview: droneRender,
+                media: "img"},
+            {
+                links: [
+                    {
+                        name: "Click here to watch our final project video!",
+                        url: "/projects/Terrawarden", 
+                        icon: "Click here to watch our final project video!",
+                    },
+                ], 
+                preview: terrawardenVideo, 
+                media: "video"
+            },
         ],
     },
     {
