@@ -14,7 +14,7 @@ const MiniCard = ({item}) => {
                             href={item.link}
                             color="primary"
                             sx={{ color: '#263238', padding: 0.5 }}
-                            maxWidth='80%'
+                            variant="contained"
                         >
                             {item.description}
                         </IconButton>
