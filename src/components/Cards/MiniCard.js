@@ -15,6 +15,8 @@ const MiniCard = ({item}) => {
                             color="primary"
                             sx={{ color: '#263238', padding: 0.5 }}
                             variant="contained"
+                            white-space= "normal"
+                            word-wrap= "break-word"
                         >
                             {item.description}
                         </IconButton>
