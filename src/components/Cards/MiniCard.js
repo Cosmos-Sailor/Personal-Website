@@ -11,7 +11,7 @@ const MiniCard = (prop) => {
                     <Box sx={{ display: 'flex', justifyContent: 'center', mt: 0.5 }}>
                         <IconButton
                             title={prop.description}
-                            href={link.url}
+                            href={prop.link}
                             color="primary"
                             sx={{ color: '#263238', padding: 0.5 }}
                             >
