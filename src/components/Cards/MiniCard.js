@@ -1,5 +1,7 @@
 import React from 'react';
 import { Card, CardContent, Box, IconButton} from '@mui/material';
+import CardIcons from './CardIcons';
+
 //CardMedia, 
 //<CardMedia component={resource.media} sx={{src: `url(${resource.preview})`, height: 320, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}}/>
 
