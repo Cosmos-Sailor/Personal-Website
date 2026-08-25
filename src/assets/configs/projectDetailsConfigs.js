@@ -31,16 +31,19 @@ const projectConfig = [
             {name: "What Does MQP Stand For?", link: MQP_Definition},
             {name: "The Terrawarden Drone", link: terrawardenDrone},
             {name: "My Role", link: myRole},
-            {name: "Results and Reflections", link: myRole}],
+            {name: "Results and Reflections", link: myRole}
+        ],
         images: [
             {name: "Final Project Video", link: terrawardenVideo, media: "video"},
             {name: "Full Drone CAD Render", link: droneRender, media: "image"}, 
             {name: "Drone Flying Indoors", link: droneReal, media: "image"},
-            {name: "Arm Render", link: terrawardenArm, media: "image"}],
+            {name: "Arm Render", link: terrawardenArm, media: "image"}
+        ],
         resources: [
-            {description: "paper", link: terrawardenDescription},
-            {description: "poster", link: terrawardenDescription},
-            {description: "codebase", link: terrawardenDescription},
+            {description: "Click here to read our paper!", preview: terrawardenDescription, media: "iframe"},
+            {description: "Click here to view our award-winning poster!", preview: terrawardenDescription, media: "iframe"},
+            {description: "Click here to view our open-source codebase!", preview: terrawardenDescription, media: "img"},
+            {description: "Click here to watch our final project video!", preview: terrawardenDescription, media: "video"}
         ],
     },
     {

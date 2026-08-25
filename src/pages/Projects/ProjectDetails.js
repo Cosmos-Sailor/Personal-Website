@@ -6,6 +6,8 @@ import projectConfig from '../../assets/configs/projectDetailsConfigs'
 import "./ProjectDetails.css"
 import ZeroMd from 'https://cdn.jsdelivr.net/npm/zero-md@3'
 import { Grid2 } from '@mui/material';
+import MiniCard from '../../components/Cards/MiniCard';
+
 
 customElements.define('zero-md', ZeroMd)
 
@@ -14,7 +16,6 @@ const ProjectDetails = () => {
     const [project, setProject] = useState("")
     const [currentImageIndex, setCurrentImageIndex] = useState(0)
     const [currentBlurbIndex, setCurrentBlurbIndex] = useState(0)
-    //const [currentCarouselText, setCurrentCarouselText] = useState("")
 
     useEffect(() => {
         setProject(projectConfig.find((item) => item.id === projectId))
@@ -23,21 +24,6 @@ const ProjectDetails = () => {
     if (!project) {
         return <p>Project not found!</p>;
     }
-
-    
-    // async function getText(fileName) {
-    //     try {
-    //         const response = await fetch(fileName)
-    //         const text = await response.text()
-
-    //         setCurrentCarouselText(text)
-    //     } catch (error) {
-    //         console.error("error fetching text:", error)
-    //     }
-    // }
-
-    //getText(project.blurbs[currentBlurbIndex].link)
-
 
     const handleNextImage = () => {
         setCurrentImageIndex(currentImageIndex === project.images.length - 1 ? 0: currentImageIndex + 1)
@@ -49,17 +35,12 @@ const ProjectDetails = () => {
 
     const handleNextBlurb = () => {
         setCurrentBlurbIndex(currentBlurbIndex === project.blurbs.length - 1 ? 0: currentBlurbIndex + 1)
-        //getText(project.blurbs[currentBlurbIndex].link)
       }
 
     const handlePrevBlurb = () => {
         setCurrentBlurbIndex(currentBlurbIndex === 0 ? project.blurbs.length - 1: currentBlurbIndex -1)
-        //getText(project.blurbs[currentBlurbIndex].link)
     }
-
-    //<p className={currentBlurbIndex === index ? "slide" : "slide-hidden"} style={{ textAlign: 'left', fontSize:18, lineHeight: 1.6, maxWidth: '80%'}}>{currentCarouselText}</p>
     
-
     return (
         <section id='project-details'>
             <Box sx={{ textAlign: 'center', py: 4, backgroundColor: '#f0f0f0', marginTop: '10px', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
@@ -122,7 +103,7 @@ const ProjectDetails = () => {
                 <Grid2 container spacing={30} justifyContent="center">
                         {project.resources.map((resource, index) => (
                             <Grid2 item="true" key={index} xs={12} sm={6} md={4}>
-                                <p style={{textAlign: 'center', padding: '15px', fontSize:18, lineHeight: 1.6, maxWidth: '80%'}}>{resource.description}</p>
+                                <MiniCard item={resource} />
                             </Grid2>
                         ))}
                 </Grid2>
