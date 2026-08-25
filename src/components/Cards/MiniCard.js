@@ -8,15 +8,12 @@ const MiniCard = ({item}) => {
             <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', p: 2 }}>
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1 }} />
                 <Box sx={{ py: 0.3 }}>
-                    <Box sx={{ display: 'flex', justifyContent: 'center', mt: 0.5 }}>
+                    <Box sx={{ display: 'flex', justifyContent: 'center', mt: 0.5, whiteSpace: 'normal', wordWrap: 'break-word', variant: 'contained' }}>
                         <IconButton
                             title={item.description}
                             href={item.link}
                             color="primary"
                             sx={{ color: '#263238', padding: 0.5 }}
-                            variant="contained"
-                            white-space= "normal"
-                            word-wrap= "break-word"
                         >
                             {item.description}
                         </IconButton>
