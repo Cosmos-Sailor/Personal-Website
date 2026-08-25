@@ -19,6 +19,8 @@ import terrawardenDescription from "../projectDescriptions/terrawardenDescriptio
 import segmentationVideo from "../videos/segmentation.mp4"
 import terrawardenVideo from "../videos/terrawarden.mp4"
 
+import resume from "../images/resume.pdf"
+
 const projectConfig = [
     {
         id: "Terrawarden",
@@ -40,10 +42,10 @@ const projectConfig = [
             {name: "Arm Render", link: terrawardenArm, media: "image"}
         ],
         resources: [
-            {description: "Click here to read our paper!", preview: terrawardenDescription, media: "iframe"},
-            {description: "Click here to view our award-winning poster!", preview: terrawardenDescription, media: "iframe"},
-            {description: "Click here to view our open-source codebase!", preview: terrawardenDescription, media: "img"},
-            {description: "Click here to watch our final project video!", preview: terrawardenDescription, media: "video"}
+            {description: "Click here to read our paper!", preview: resume, media: "iframe"},
+            {description: "Click here to view our award-winning poster!", preview: resume, media: "iframe"},
+            {description: "Click here to view our open-source codebase!", preview: droneRender, media: "img"},
+            {description: "Click here to watch our final project video!", preview: terrawardenVideo, media: "video"}
         ],
     },
     {
