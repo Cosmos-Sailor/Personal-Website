@@ -67,8 +67,10 @@ const projectConfig = [
             {name: "Sample image augmented in Pytorch", link: transformed, media: "image"}
         ],
         resources: [
-            {description: "paper", link: terrawardenDescription},
-            {description: "codebase", link: terrawardenDescription},
+            {description: "Click here to read our paper!", preview: resume, media: "iframe", link: "/projects/SemanticSegmentation"},
+            {description: "Click here to view our award-winning poster!", preview: resume, media: "iframe", link: "/projects/SemanticSegmentation"},
+            {description: "Click here to view our open-source codebase!", preview: droneRender, media: "img", link: "/projects/SemanticSegmentation"},
+            {description: "Click here to watch our final project video!", preview: terrawardenVideo, media: "video", link: "/projects/SemanticSegmentation"}
         ],
     },
     {
@@ -85,9 +87,10 @@ const projectConfig = [
         images: [
             {name: "Full drone CAD", link: drone}, {name: "pic2", link: amcl}, {name: "pic3", link: arm}],
         resources: [
-            {description: "paper", link: terrawardenDescription},
-            {description: "video", link: terrawardenDescription},
-            {description: "codebase", link: terrawardenDescription},
+            {description: "Click here to read our paper!", preview: resume, media: "iframe", link: "/projects/SemanticSegmentation"},
+            {description: "Click here to view our award-winning poster!", preview: resume, media: "iframe", link: "/projects/SemanticSegmentation"},
+            {description: "Click here to view our open-source codebase!", preview: droneRender, media: "img", link: "/projects/SemanticSegmentation"},
+            {description: "Click here to watch our final project video!", preview: terrawardenVideo, media: "video", link: "/projects/SemanticSegmentation"}
         ],
     },
     {
@@ -107,8 +110,10 @@ const projectConfig = [
             {name: "pic2", link: amcl}, 
             {name: "pic3", link: arm}],
         resources: [
-            {description: "paper", link: terrawardenDescription},
-            {description: "codebase", link: terrawardenDescription},
+            {icon: "Click here to read our paper!", preview: resume, media: "iframe", link: "/projects/SemanticSegmentation"},
+            {icon: "Click here to view our award-winning poster!", preview: resume, media: "iframe", link: "/projects/SemanticSegmentation"},
+            {icon: "Click here to view our open-source codebase!", preview: droneRender, media: "img", link: "/projects/SemanticSegmentation"},
+            {icon: "Click here to watch our final project video!", preview: terrawardenVideo, media: "video", link: "/projects/SemanticSegmentation"}
         ],
     },
 ];
