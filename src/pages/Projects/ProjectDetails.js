@@ -100,7 +100,7 @@ const ProjectDetails = () => {
                 </span>
             </Box>
 
-            <Box sx={{minWidth: '95vw', maxWidth: '95vw', textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
+            <Box sx={{minWidth: '600px', maxWidth: '95vw', textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
                 <h3 style={{fontSize: 46, marginBottom: '0px'}}>{"Want to Learn More?"}</h3>
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1, mx: 8, py: 0.5}} />
                 <Grid2 container spacing={6} justifyContent="center">
