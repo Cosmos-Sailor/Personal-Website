@@ -4,7 +4,7 @@ import { Card, CardMedia, CardContent, Box, Button} from '@mui/material';
 const MiniCard = ({item}) => {
     return (
         <Card sx={{ width: 380, height: 450, m: 2, backgroundColor: '#F6F6F6', boxShadow: 3, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-            <CardMedia component={item.media} src={item.preview} sx={{height: 320, width: '90%', padding: 0.5, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}} controls/>
+            <CardMedia component={item.media} src={item.preview} sx={{height: 320, width:'stretch', padding: 1, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}} controls/>
             <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', p: 2, maxWidth: '100%' }}>
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1 }} />
                 <Box sx={{ py: 0.3 }}>
