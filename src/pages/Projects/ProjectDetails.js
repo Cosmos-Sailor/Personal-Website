@@ -43,7 +43,7 @@ const ProjectDetails = () => {
     
     return (
         <section id='project-details'>
-            <Box sx={{ minWidth: '80vh', textAlign: 'center', py: 4, backgroundColor: '#f0f0f0', marginTop: '10px', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6}}>
+            <Box sx={{ minWidth: '80vh', display: 'flex', textAlign: 'center', py: 4, backgroundColor: '#f0f0f0', marginTop: '10px', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6}}>
                 <div style={{marginTop:"-75px", display: 'flex', flexDirection: 'column', gap: '0px', textAlign: 'center', paddingLeft: 0, padding: '1.25rem'}}>
                     <h3 style={{fontSize: 46, marginBottom: '0px'}}>{project.title}</h3>
                     <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1, marginBottom: '-4px', mx: 2}} />
