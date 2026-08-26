@@ -20,6 +20,8 @@ import segmentationVideo from "../videos/segmentation.mp4"
 import terrawardenVideo from "../videos/terrawarden.mp4"
 
 import resume from "../images/resume.pdf"
+import paper from "../PDFs/Terrawarden_Paper.pdf"
+import poster from "../PDFs/Terrawarden_Poster.pdf"
 
 const projectConfig = [
     {
@@ -42,10 +44,10 @@ const projectConfig = [
             {name: "Arm Render", link: terrawardenArm, media: "image"}
         ],
         resources: [
-            {description: "Click here to read our paper!", preview: resume, media: "iframe", link: "/projects/SemanticSegmentation"},
-            {description: "Click here to view our award-winning poster!", preview: resume, media: "iframe", link: "/projects/SemanticSegmentation"},
-            {description: "Click here to view our open-source codebase!", preview: droneRender, media: "img", link: "/projects/SemanticSegmentation"},
-            {description: "Click here to watch our final project video!", preview: terrawardenVideo, media: "video", link: "/projects/SemanticSegmentation"}
+            {description: "Click here to read our paper!", preview: paper, media: "iframe", link: "https://digital.wpi.edu/concern/student_works/8c97kw15v"},
+            {description: "Click here to view our award-winning poster!", preview: poster, media: "iframe", link: "https://digital.wpi.edu/concern/student_works/8c97kw15v"},
+            {description: "Click here to view our open-source codebase!", preview: droneRender, media: "img", link: "https://github.com/Terrawarden-MQP"},
+            {description: "Click here to watch our final project video!", preview: terrawardenVideo, media: "video", link: "https://www.youtube.com/watch?v=JgRSZfa9o8A"}
         ],
     },
     {
@@ -87,7 +89,7 @@ const projectConfig = [
         images: [
             {name: "Full drone CAD", link: drone}, {name: "pic2", link: amcl}, {name: "pic3", link: arm}],
         resources: [
-            {description: "Click here to read our paper!", preview: resume, media: "iframe", link: "/projects/SemanticSegmentation"},
+            {description: "Click here to read our paper!", preview: "https://digital.wpi.edu/concern/student_works/8c97kw15v", media: "iframe", link: "https://digital.wpi.edu/concern/student_works/8c97kw15v"},
             {description: "Click here to view our award-winning poster!", preview: resume, media: "iframe", link: "/projects/SemanticSegmentation"},
             {description: "Click here to view our open-source codebase!", preview: droneRender, media: "img", link: "/projects/SemanticSegmentation"},
             {description: "Click here to watch our final project video!", preview: terrawardenVideo, media: "video", link: "/projects/SemanticSegmentation"}

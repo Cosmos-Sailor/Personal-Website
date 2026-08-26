@@ -5,7 +5,7 @@ const MiniCard = ({item}) => {
     return (
         <Card sx={{ width: 380, height: 450, m: 2, backgroundColor: '#F6F6F6', boxShadow: 3, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <CardMedia component={item.media} src={item.preview} sx={{height: 320, backgroundSize: '90%', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}} controls/>
-            <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', p: 2 }}>
+            <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', p: 2, maxWidth: '100%' }}>
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1 }} />
                 <Box sx={{ py: 0.3 }}>
                     <Box sx={{ display: 'flex', justifyContent: 'center', mt: 0.5, whiteSpace: 'normal', wordWrap: 'break-word', variant: 'contained' }}>
