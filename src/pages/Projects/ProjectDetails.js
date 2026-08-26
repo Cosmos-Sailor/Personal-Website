@@ -43,7 +43,7 @@ const ProjectDetails = () => {
     
     return (
         <section id='project-details' style={{flexDirection: 'column', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <Box sx={{ minWidth: '80vw', textAlign: 'center', py: 4, backgroundColor: '#f0f0f0', marginTop: '10px', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6}}>
+            <Box sx={{ minWidth: '90vw', textAlign: 'center', py: 4, backgroundColor: '#f0f0f0', marginTop: '10px', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6}}>
                 <div style={{marginTop:"-75px", display: 'flex', flexDirection: 'column', gap: '0px', textAlign: 'center', paddingLeft: 0, padding: '1.25rem'}}>
                     <h3 style={{fontSize: 46, marginBottom: '0px'}}>{project.title}</h3>
                     <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1, marginBottom: '-4px', mx: 2}} />
@@ -60,7 +60,7 @@ const ProjectDetails = () => {
                 </div>
             </Box>
             
-        <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6}}>
+        <Box sx={{minWidth: '90vw', textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6}}>
                 <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>{project.blurbs[currentBlurbIndex].name}</h3>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <BsArrowLeftCircleFill onClick={handlePrevBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
@@ -76,7 +76,7 @@ const ProjectDetails = () => {
                 </span> 
             </Box>
 
-            <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
+            <Box sx={{minWidth: '90vw', textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
                 <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>Additional Project Visuals</h3>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <BsArrowLeftCircleFill onClick={handlePrevImage} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
@@ -98,7 +98,7 @@ const ProjectDetails = () => {
                 </span>
             </Box>
 
-            <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
+            <Box sx={{minWidth: '90vw', textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
                 <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>{"Want to Learn More?"}</h3>
                 <Grid2 container spacing={6} justifyContent="center">
                         {project.resources.map((resource, index) => (
