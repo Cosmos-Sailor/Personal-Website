@@ -64,7 +64,7 @@ const ProjectDetails = () => {
                 <h3 style={{fontSize: 46, marginBottom: '0px'}}>{project.blurbs[currentBlurbIndex].name}</h3>
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1, mx: 8, py: 0.5}} />
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <BsArrowLeftCircleFill onClick={handlePrevBlurb} style={{display: 'flex', padding: '15px', width: '32px', height: '32px', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
+                    <BsArrowLeftCircleFill onClick={handlePrevBlurb} style={{minWidth: '32px', display: 'flex', padding: '15px', width: '32px', height: '32px', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                     {project.blurbs.map((blurb, index) => (
                         <zero-md class={currentBlurbIndex === index ? "slide" : "slide-hidden"} src={blurb.link} style={{maxWidth:'80%', padding: '15px'}}></zero-md>
                     ))}
