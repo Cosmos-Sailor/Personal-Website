@@ -99,7 +99,7 @@ const ProjectDetails = () => {
             </Box>
 
             <Box sx={{textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
-                <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>{"Want to Learn More? Click here!"}</h3>
+                <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>{"Want to Learn More?"}</h3>
                 <Grid2 container spacing={6} justifyContent="center">
                         {project.resources.map((resource, index) => (
                             <Grid2 item="true" key={index} xs={12} sm={6} md={4}>
