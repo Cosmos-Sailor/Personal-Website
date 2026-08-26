@@ -82,16 +82,14 @@ const ProjectDetails = () => {
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1, mx: 8, py: 0.3}} />
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <BsArrowLeftCircleFill onClick={handlePrevImage} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
-                    <Box sx={{padding: '15px', borderRadius: '0.5rem', height: '400px', boxShadow: '0px 0px 7px #666', maxHeight: '400px'}}>
                         {project.images.map((image, index) => (
-                            <div>
+                            <Box className={currentImageIndex === index ? "slide" : "slide-hidden"} sx={{padding: '15px', borderRadius: '0.5rem', height: '400px', boxShadow: '0px 0px 7px #666', maxHeight: '400px'}}>
                             {image.media === 'image' ? ( 
                                 <img className={currentImageIndex === index ? "slide" : "slide-hidden"} src={image.link} alt={image.name} key={index} style={{height:'100%', width: 'auto', borderRadius: '0.5rem', objectFit: 'contain'}}></img>) :
                                 <video className={currentImageIndex === index ? "slide" : "slide-hidden"} src={image.link} alt={image.name} controls key={index} style={{height:'100%', width: 'auto', borderRadius: '0.5rem', objectFit: 'contain'}}></video>
                             }
-                            </div>
+                            </Box>
                         ))}
-                    </Box>
                     <BsArrowRightCircleFill onClick={handleNextImage} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                 </div>
                 <h3 style={{display: 'flex',  justifyContent: 'center', fontSize: 20}}>{project.images[currentImageIndex].name}</h3>
