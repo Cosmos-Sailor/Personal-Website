@@ -61,7 +61,7 @@ const ProjectDetails = () => {
             </Box>
             
         <Box sx={{minWidth: '90vw', textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6}}>
-                <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>{project.blurbs[currentBlurbIndex].name}</h3>
+                <h3 style={{fontSize: 46, padding: '15px', marginBottom: '0px'}}>{project.blurbs[currentBlurbIndex].name}</h3>
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1, marginBottom: '-4px', mx: 2}} />
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <BsArrowLeftCircleFill onClick={handlePrevBlurb} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
@@ -78,7 +78,7 @@ const ProjectDetails = () => {
             </Box>
 
             <Box sx={{minWidth: '90vw', textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
-                <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>Additional Project Visuals</h3>
+                <h3 style={{fontSize: 46, padding: '15px', marginBottom: '0px'}}>Additional Project Visuals</h3>
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1, marginBottom: '-4px', mx: 2}} />
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <BsArrowLeftCircleFill onClick={handlePrevImage} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
@@ -102,7 +102,7 @@ const ProjectDetails = () => {
 
             <Box sx={{minWidth: '90vw', textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1, marginBottom: '-4px', mx: 2}} />
-                <h3 style={{fontSize: 46, padding: '15px', marginBottom: '10px'}}>{"Want to Learn More?"}</h3>
+                <h3 style={{fontSize: 46, padding: '15px', marginBottom: '0px'}}>{"Want to Learn More?"}</h3>
                 <Grid2 container spacing={6} justifyContent="center">
                         {project.resources.map((resource, index) => (
                             <Grid2 item="true" key={index} xs={12} sm={6} md={4}>
