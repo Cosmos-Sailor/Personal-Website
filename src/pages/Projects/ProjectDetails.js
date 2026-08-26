@@ -83,8 +83,8 @@ const ProjectDetails = () => {
                     {project.images.map((image, index) => (
                         <Box style={{overflow: 'clip', backgroundSize: 'contain', borderRadius: '0.5rem', height: '60%', boxShadow: '0px 0px 7px #666', maxWidth: '60%', maxHeight: '400px'}}>
                             {image.media === 'image' ? ( 
-                                <img className={currentImageIndex === index ? "slide" : "slide-hidden"} src={image.link} alt={image.name} key={index} style={{backgroundSize: 'contain', borderRadius: '0.5rem', height: '60%', maxWidth: '100%', maxHeight:'80%'}}></img>) :
-                                <video className={currentImageIndex === index ? "slide" : "slide-hidden"} src={image.link} alt={image.name} controls key={index} style={{backgroundSize: 'contain', borderRadius: '0.5rem', height: '60%', maxWidth: '100%', maxHeight:'80%'}}></video>
+                                <img className={currentImageIndex === index ? "slide" : "slide-hidden"} src={image.link} alt={image.name} key={index} style={{borderRadius: '0.5rem', objectFit: 'contain'}}></img>) :
+                                <video className={currentImageIndex === index ? "slide" : "slide-hidden"} src={image.link} alt={image.name} controls key={index} style={{borderRadius: '0.5rem', objectFit: 'contain'}}></video>
                             }
                         </Box>
                     ))}
