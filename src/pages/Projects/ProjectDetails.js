@@ -81,7 +81,7 @@ const ProjectDetails = () => {
                 <h3 style={{fontSize: 46, marginBottom: '0px'}}>Additional Project Visuals</h3>
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1, mx: 8, py: 0.5}} />
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <BsArrowLeftCircleFill onClick={handlePrevImage} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
+                    <BsArrowLeftCircleFill onClick={handlePrevImage} style={{minWidth: '32px', display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                         {project.images.map((image, index) => (
                             <Box className={currentImageIndex === index ? "slide" : "slide-hidden"} sx={{padding: '15px', borderRadius: '0.5rem', height: '40vw', boxShadow: '0px 0px 7px #666', maxHeight: '1200px'}}>
                             {image.media === 'image' ? ( 
@@ -90,7 +90,7 @@ const ProjectDetails = () => {
                             }
                             </Box>
                         ))}
-                    <BsArrowRightCircleFill onClick={handleNextImage} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
+                    <BsArrowRightCircleFill onClick={handleNextImage} style={{minWidth: '32px', display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                 </div>
                 <h3 style={{display: 'flex',  justifyContent: 'center', fontSize: 20}}>{project.images[currentImageIndex].name}</h3>
                 <span style={{display: 'flex', position: 'relative', justifyContent: 'center', padding: '0px 0px 20px 0px'}}>
@@ -100,7 +100,7 @@ const ProjectDetails = () => {
                 </span>
             </Box>
 
-            <Box sx={{minWidth: '90vw', maxWidth: '90vw', textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
+            <Box sx={{variant: 'contained', minWidth: '90vw', maxWidth: '90vw', textAlign: 'center', backgroundColor: '#f0f0f0', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', mb: 6 }}>
                 <h3 style={{fontSize: 46, marginBottom: '0px'}}>{"Want to Learn More?"}</h3>
                 <Box sx={{ borderTop: 1, borderColor: 'divider', my: 1, mx: 8, py: 0.5}} />
                 <Grid2 container spacing={6} justifyContent="center">
