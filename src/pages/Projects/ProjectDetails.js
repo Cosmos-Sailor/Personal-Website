@@ -81,7 +81,7 @@ const ProjectDetails = () => {
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <BsArrowLeftCircleFill onClick={handlePrevImage} style={{display: 'flex', padding: '15px', width: '2rem', height: '2rem', color: 'rgba(76, 80, 79, 0.42)', cursor: 'pointer'}}/>
                     {project.images.map((image, index) => (
-                        <Box style={{borderRadius: '0.5rem', height: '400px', boxShadow: '0px 0px 7px #666', maxWidth: '60%', maxHeight: '400px'}}>
+                        <Box sx={{borderRadius: '0.5rem', height: '400px', boxShadow: '0px 0px 7px #666', maxHeight: '400px'}}>
                             {image.media === 'image' ? ( 
                                 <img className={currentImageIndex === index ? "slide" : "slide-hidden"} src={image.link} alt={image.name} key={index} style={{height:'100%', width: 'auto', borderRadius: '0.5rem', objectFit: 'contain'}}></img>) :
                                 <video className={currentImageIndex === index ? "slide" : "slide-hidden"} src={image.link} alt={image.name} controls key={index} style={{height:'100%', width: 'auto', borderRadius: '0.5rem', objectFit: 'contain'}}></video>
