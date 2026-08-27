@@ -23,7 +23,7 @@ const Home = () => {
                     </Grid2>
                 </Grid2>
             </Container>
-            <Container maxWidth="85vw" justifyContent="center" className="break-content" id="break">
+            <Container minWidth="85vw" justifyContent="center" className="break-content" id="break">
                 <Grid2 container justifyContent="center" alignItems="center" className="home-header">
                     <Grid2 item xs={12} style={{ textAlign: 'center' }}>
                         <Typography variant="h1" sx={{ color: '#f5f5f5', fontSize: '3em' }}>
@@ -32,8 +32,8 @@ const Home = () => {
                     </Grid2>
                 </Grid2>          
             </Container>
-            <Container justifyContent="center" className="resume-content" id="resume" sx={{ mt: 6, justifyContent: 'center', justifySelf: 'center' }}>
-                <Box sx={{ justifyContent: 'center', width: '100%', minWidth: '85vw', mx: 'auto' }}>
+            <Container minWidth="85vw" justifyContent="center" className="resume-content" id="resume" sx={{ mt: 6, justifyContent: 'center', justifySelf: 'center' }}>
+                <Box sx={{width: '100%', mx: 'auto' }}>
                     <Timeline items={homeConfig.workTimeline} />
                 </Box>
             </Container>
