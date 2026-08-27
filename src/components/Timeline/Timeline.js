@@ -12,7 +12,7 @@ const CustomTimeline = (props) => {
                 const { id, date, icon, title, company, description, tags } = item || {};
                 return (
                     <TimelineItem key={id}>
-                        <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="textSecondary">
+                        <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="h5" color="textSecondary">
                             {date}
                         </TimelineOppositeContent>
                         <TimelineSeparator>
@@ -42,7 +42,7 @@ const CustomTimeline = (props) => {
                                 <Typography variant="subtitle2" sx={{ textAlign: 'center', fontFamily: 'Open Sans, sans-serif', color: '#757575' }}>
                                     {company}
                                 </Typography>
-                                <Typography variant="body1" sx={{ mb: 2, fontFamily: 'Open Sans, sans-serif', color: '#424242' }}>
+                                <Typography variant="body1" sx={{ textAlign: 'left', mb: 2, fontFamily: 'Open Sans, sans-serif', color: '#424242' }}>
                                     {description}
                                 </Typography>
                                 <Tags id={id} tags={tags} />
