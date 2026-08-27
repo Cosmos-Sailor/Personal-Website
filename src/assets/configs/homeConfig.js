@@ -2,8 +2,8 @@ import React from 'react'
 import {PiNuclearPlant} from "react-icons/pi";
 //import {ioMdSchool} from "react-icons/io";
 import {GiMechanicalArm} from "react-icons/gi";
-import { GiDeliveryDrone } from "react-icons/gi";
-//import { tbAutomation } from "react-icons/tb";
+import {GiDeliveryDrone} from "react-icons/gi";
+import {tbAutomation} from "react-icons/tb";
 
 const homeConfig = {
 
@@ -40,7 +40,7 @@ const homeConfig = {
                         <li>Designed fixtures to facilitate flowlines</li>
                     </ul>,
             date: "November 2025 - Present",
-            icon: <GiDeliveryDrone/>,
+            icon: <tbAutomation/>,
             tags: ["CAD", "Engineering Design", "Rapid Prototyping", "Flowline Design", "Electrical Design", "Microcontroller Programming"]
         },
         {
