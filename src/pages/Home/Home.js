@@ -33,7 +33,7 @@ const Home = () => {
                 </Grid2>          
             </Container>
             <Container justifyContent="center" className="resume-content" id="resume" sx={{ mt: 6, justifyContent: 'center', justifySelf: 'center' }}>
-                <Box sx={{minWidth:'85vw', maxWidth:'85vw', mx: 'none' }}>
+                <Box sx={{minWidth:'85vw', maxWidth:'85vw', justifySelf: 'center'}}>
                     <Timeline items={homeConfig.workTimeline} />
                 </Box>
             </Container>
