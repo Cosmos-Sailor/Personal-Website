@@ -42,7 +42,7 @@ const CustomTimeline = (props) => {
                                 <Typography variant="subtitle2" sx={{ textAlign: 'center', fontFamily: 'Open Sans, sans-serif', color: '#757575' }}>
                                     {company}
                                 </Typography>
-                                <Typography variant="body1" sx={{ textAlign: 'left', mb: 2, fontFamily: 'Open Sans, sans-serif', color: '#424242' }}>
+                                <Typography variant="body1" sx={{ padding: 4, textAlign: 'left', mb: 2, fontFamily: 'Open Sans, sans-serif', color: '#424242' }}>
                                     {description}
                                 </Typography>
                                 <Tags id={id} tags={tags} />
