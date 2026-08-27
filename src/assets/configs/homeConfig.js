@@ -40,7 +40,7 @@ const homeConfig = {
                         <li>Designed fixtures to facilitate flowlines</li>
                     </ul>,
             date: "November 2025 - Present",
-            icon: <tbAutomation/>,
+            icon: <GiDeliveryDrone/>,
             tags: ["CAD", "Engineering Design", "Rapid Prototyping", "Flowline Design", "Electrical Design", "Microcontroller Programming"]
         },
         {
@@ -92,7 +92,7 @@ const homeConfig = {
                         <li>Collaborated with professors, TAs, and other ARC staff to help students achieve maximal understanding of subject material</li>
                     </ul>,
             date: "April 2021 - May 2024",
-            icon: <ioMdSchool/>,
+            icon: <GiDeliveryDrone/>,
             tags: ["Collaboration", "Calculus", "Physics", "Social Skills"]
         }
     ]
