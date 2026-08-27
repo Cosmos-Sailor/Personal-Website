@@ -17,14 +17,14 @@ const Home = () => {
                         <Box sx={{ textAlign: 'center', mt: 2 }}>
                             <DynamicTyping titles={homeConfig.titles} />
                         </Box>
-                        <Box sx={{ mt: 4 }}>
+                        <Box sx={{minWidth:'85vw', maxWidth:'85vw', justifySelf: 'center', mt: 4 }}>
                             <About about={homeConfig.about} />
                         </Box>
                     </Grid2>
                 </Grid2>
             </Container>
             <Container justifyContent="center" className="break-content" id="break">
-                <Grid2 container minWidth="85vw" maxWidth="85vw" justifySelf="center" alignItems="center" className="home-header">
+                <Grid2 container justifyContent="center" alignItems="center" className="home-header">
                     <Grid2 item xs={12} style={{ textAlign: 'center' }}>
                         <Typography variant="h1" sx={{ color: '#f5f5f5', fontSize: '3em' }}>
                             {homeConfig.break}
