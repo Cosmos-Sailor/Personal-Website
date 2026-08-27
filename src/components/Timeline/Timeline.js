@@ -30,7 +30,7 @@ const CustomTimeline = (props) => {
                                     p: 2,
                                     background: 'linear-gradient(135deg, #f5f5f5 30%, #e8e8e8 90%)',
                                     borderRadius: '12px',
-                                    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+                                    boxShadow: '0 4px 20px rgba(135, 58, 58, 0.1)',
                                     transition: 'transform 0.2s ease-in-out',
                                     '&:hover': {
                                         transform: 'scale(1.03)',
