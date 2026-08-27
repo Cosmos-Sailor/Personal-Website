@@ -92,7 +92,7 @@ const homeConfig = {
                         <li>Collaborated with professors, TAs, and other ARC staff to help students achieve maximal understanding of subject material</li>
                     </ul>,
             date: "April 2021 - May 2024",
-            icon: <GiCommercialAirplane/>,
+            icon: <ioMdSchool/>,
             tags: ["Collaboration", "Calculus", "Physics", "Social Skills"]
         }
     ]
