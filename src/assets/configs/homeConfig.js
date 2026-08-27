@@ -31,7 +31,7 @@ const homeConfig = {
             <strong className="main-name"> My Recent Experience</strong>
         </h1>,
     workTimeline: [
-                {
+        {
             id: "work-4",
             title: "Automation Engineer",
             company: "Innofiber",
