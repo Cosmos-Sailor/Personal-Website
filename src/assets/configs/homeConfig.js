@@ -1,9 +1,9 @@
 import React from 'react'
 import {PiNuclearPlant} from "react-icons/pi";
-//import {ioMdSchool} from "react-icons/io";
+import {IoMdSchool} from "react-icons/io";
 import {GiMechanicalArm} from "react-icons/gi";
 import {GiDeliveryDrone} from "react-icons/gi";
-import {tbAutomation} from "react-icons/tb";
+import {TbAutomaticGearbox} from "react-icons/tb";
 
 const homeConfig = {
 
@@ -40,7 +40,7 @@ const homeConfig = {
                         <li>Designed fixtures to facilitate flowlines</li>
                     </ul>,
             date: "November 2025 - Present",
-            icon: <tbAutomation/>,
+            icon: <TbAutomaticGearbox/>,
             tags: ["CAD", "Engineering Design", "Rapid Prototyping", "Flowline Design", "Electrical Design", "Microcontroller Programming"]
         },
         {
@@ -52,7 +52,7 @@ const homeConfig = {
                         <li>Worked in a team of 6 to design, manufacture, and build a proof-of-concept aerial manipulator for trash detection and collection on highway medians.</li>
                     </ul>,
             date: "April 2024 - May 2025",
-            icon: <tbAutomation/>,
+            icon: <GiDeliveryDrone/>,
             tags: ["Deep Learning", "Autonomous Aerial Vehicle", "Aerial Controls", "CAD", "Manipulator Design", "Prototyping"]
         },
         {
@@ -92,7 +92,7 @@ const homeConfig = {
                         <li>Collaborated with professors, TAs, and other ARC staff to help students achieve maximal understanding of subject material</li>
                     </ul>,
             date: "April 2021 - May 2024",
-            icon: <GiDeliveryDrone/>,
+            icon: <IoMdSchool/>,
             tags: ["Collaboration", "Calculus", "Physics", "Social Skills"]
         }
     ]
