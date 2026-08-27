@@ -1,9 +1,9 @@
 import React from 'react'
-//import {BsClipboardData} from "react-icons/bs";
-import {DiCodeigniter} from "react-icons/di";
-import {GiCommercialAirplane} from "react-icons/gi";
-import {FaMobileAlt} from "react-icons/fa";
-import { BiRocket } from "react-icons/bi";
+import {PiNuclearPlant} from "react-icons/pi";
+import {ioMdSchool} from "react-icons/io";
+import {GiMechanicalArm} from "react-icons/gi";
+import { GiDeliveryDrone } from "react-icons/gi";
+import { tbAutomation } from "react-icons/tb";
 
 const homeConfig = {
 
@@ -13,7 +13,7 @@ const homeConfig = {
         </h1>,
     titles: [
         "A Roboticist",
-        "A Controls Engineer",
+        "An Automation Engineer",
         "A Mechanical Engineer",
         "An Eternally Curious Person",
         "A Writer",
@@ -31,6 +31,18 @@ const homeConfig = {
             <strong className="main-name"> My Recent Experience</strong>
         </h1>,
     workTimeline: [
+                {
+            id: "work-4",
+            title: "Automation Engineer",
+            company: "Innofiber",
+            description: 
+                    <ul>
+                        <li>Designed fixtures to facilitate flowlines</li>
+                    </ul>,
+            date: "November 2025 - Present",
+            icon: <tbAutomation/>,
+            tags: ["CAD", "Engineering Design", "Rapid Prototyping", "Flowline Design", "Electrical Design", "Microcontroller Programming"]
+        },
         {
             id: "work-3",
             title: "TerraWarden Drone Cleanup MQP",
@@ -40,7 +52,7 @@ const homeConfig = {
                         <li>Worked in a team of 6 to design, manufacture, and build a proof-of-concept aerial manipulator for trash detection and collection on highway medians.</li>
                     </ul>,
             date: "April 2024 - May 2025",
-            icon: <BiRocket/>,
+            icon: <GiDeliveryDrone/>,
             tags: ["Deep Learning", "Autonomous Aerial Vehicle", "Aerial Controls", "CAD", "Manipulator Design", "Prototyping"]
         },
         {
@@ -54,7 +66,7 @@ const homeConfig = {
                     </ul>,
 
             date: "May 2024 - August 2024",
-            icon: <FaMobileAlt/>,
+            icon: <GiMechanicalArm/>,
             tags: ["CAD", "Mechanical Design", "Design Specification", "Prototyping", "Engineering Research", "SOP Writing", "Soldering"]
         },
         {
@@ -67,7 +79,7 @@ const homeConfig = {
                         <li>Documented the development, suggested future improvements, and wrote a step-by-step guide on how to use the tool for new users</li>
                     </ul>,
             date: "May 2023 - August 2023",
-            icon: <DiCodeigniter/>,
+            icon: <PiNuclearPlant/>,
             tags: ["AutoCAD", "Microsoft Access", "VBA", "Database Design and Management", "UI design", "System documentation"]
         },
         {
