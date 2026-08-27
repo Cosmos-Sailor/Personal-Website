@@ -52,7 +52,7 @@ const homeConfig = {
                         <li>Worked in a team of 6 to design, manufacture, and build a proof-of-concept aerial manipulator for trash detection and collection on highway medians.</li>
                     </ul>,
             date: "April 2024 - May 2025",
-            icon: <GiDeliveryDrone/>,
+            icon: <tbAutomation/>,
             tags: ["Deep Learning", "Autonomous Aerial Vehicle", "Aerial Controls", "CAD", "Manipulator Design", "Prototyping"]
         },
         {
