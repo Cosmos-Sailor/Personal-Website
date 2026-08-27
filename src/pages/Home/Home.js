@@ -23,7 +23,7 @@ const Home = () => {
                     </Grid2>
                 </Grid2>
             </Container>
-            <Container maxWidth="85vw" className="break-content" id="break">
+            <Container maxWidth="85vw" justifyContent="center" className="break-content" id="break">
                 <Grid2 container justifyContent="center" alignItems="center" className="home-header">
                     <Grid2 item xs={12} style={{ textAlign: 'center' }}>
                         <Typography variant="h1" sx={{ color: '#f5f5f5', fontSize: '3em' }}>
