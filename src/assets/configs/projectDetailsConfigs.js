@@ -77,7 +77,8 @@ const projectConfig = [
             {name: "Final Project Video", link: terrawardenVideo, media: "video"},
             {name: "Full Drone CAD Render", link: droneRender, media: "image"}, 
             {name: "Drone Flying Indoors", link: droneReal, media: "image"},
-            {name: "Arm Render", link: terrawardenArm, media: "image"}
+            {name: "Arm Render", link: terrawardenArm, media: "image"},
+            {name: "Drone", link: drone, media: "image"}
         ],
         resources: [
             {description: "Click here to read our paper!", preview: terrawardenPaper, media: "iframe", link: "https://digital.wpi.edu/concern/student_works/8c97kw15v"},
