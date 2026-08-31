@@ -143,7 +143,7 @@ const projectConfig = [
             {name: "My Role", link: turtleBotRole},
             {name: "Results and Reflections", link: turtleBotResults}],
         images: [
-            {name: "TurtleBot exploring a maze and navagating to a frontier (the purple line marking unexplored territory)", link: amcl}],
+            {name: "TurtleBot exploring a maze and navagating to a frontier (the purple line marking unexplored territory)", link: amcl, media: "image"}],
         resources: [
             {description: "Click here to read our paper!", preview: terrawardenPaper, media: "iframe", link: "https://digital.wpi.edu/concern/student_works/8c97kw15v"},
             {description: "Click here to view our award-winning poster!", preview: terrawardenPoster, media: "iframe", link: "https://digital.wpi.edu/concern/student_works/8c97kw15v"},
