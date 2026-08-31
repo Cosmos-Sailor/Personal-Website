@@ -20,9 +20,11 @@ const homeConfig = {
         "A Flutist"
     ],
     about: {
-        start: "I am a recent graduate from Worcester Polytechnic Institute with a Bachelor's Degree in Mechanical and Robotics Engineering." +
-                " My specialties lie in manipulator design, robotic controls, aerial manipulators, and machine leaning for computer vision." +
-                " I am a jack-of-all-trades and I love working on multiple aspects of a project, especially when they involve robotic design, control systems, or aerial robotics.",
+        start: "I am an Automation Engineer working in the fiber optics industry." +
+                " In my current job my role is to support assemblers in the line by designing hands-free automated solutions that eliminate time and labor-intensive tasks from the process." +
+                " I graduated from Worcester Polytechnic Institute in 2025 with a Bachelor's Degree in Mechanical and Robotics Engineering." +
+                " My education, project, and work experience lies in manipulator design, rapid prototyping, robotic controls, aerial manipulators, and machine leaning for computer vision." +
+                " I am a jack-of-all-trades and I love working on multiple, cross-discipline aspects of a project, especially when they involve robotic design, control systems, or aerial robotics.",
         exit: "I am experienced in programming and engineering design and I am proficient in many softwares and programming languages" + 
               " such as Solidworks, Github, ROS, ROS2, Ubuntu, Python, Matlab, Java, Javascript, and HTML."
     },
@@ -37,7 +39,9 @@ const homeConfig = {
             company: "Innofiber",
             description: 
                     <ul>
-                        <li>Designed fixtures to facilitate flowlines</li>
+                        <li>Designed a hands-free automatic polishing device that eliminates 30% of the labor needs from each line it is implemented in</li>
+                        <li>Each hands-free polisher costs under $1,000 to make and the multi-modal design meant it was easily adaptable to other flow lines</li>
+                        <li>Supported the engineering team and production line by using rapid prototyping to design and create simple fixtures that could be used within a day of needing them</li>
                     </ul>,
             date: "November 2025 - Present",
             icon: <TbAutomaticGearbox/>,
