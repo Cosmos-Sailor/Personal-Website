@@ -96,7 +96,7 @@ const projectConfig = [
         blurbs: [
             {name: "What is Semantic Segmentation?", link: ssDefinition},
             {name: "My Role", link: ssRole},
-            {name: "Results and Reflections", link: terrawardenDescription}],
+            {name: "Results and Reflections", link: ssResults}],
         images: [
             {name: "Frame from segmented video", link: segmentation, media: "image"},
             {name: "Semantic Segmentation Mask Applied to Video", link: segmentationVideo, media: "video"},  
@@ -137,10 +137,10 @@ const projectConfig = [
         teamSize:"3",
         timeline:"March 2024 - May 2024",
         blurbs: [
-            {name: "What is SLAM and AMCL", link: terrawardenDescription},
-            {name: "Project Overview", link: terrawardenDescription},
-            {name: "My Role", link: terrawardenDescription},
-            {name: "Results and Reflections", link: terrawardenDescription}],
+            {name: "What is SLAM and AMCL", link: turtleBotDefinition},
+            {name: "Project Overview", link: turtleBotOverview},
+            {name: "My Role", link: turtleBotRole},
+            {name: "Results and Reflections", link: turtleBotResults}],
         images: [
             {name: "TurtleBot exploring a maze and navagating to a frontier (the purple line marking unexplored territory)", link: amcl}],
         resources: [
