@@ -6,6 +6,7 @@
     padding: '15px';
     font-size: '20px';
     line-height: 1.6;
+    variant: 'h3';
   }
 </style>
 One of the first things my team did during the course of the MQP was assign each person a portion of the project that they would take lead on. As I double majored in mechanical and robotics engineering and therefore had some of the stronger design skills out of the team members, my main responsibility in the project was the design and testing of our end-effector, or manipulator.

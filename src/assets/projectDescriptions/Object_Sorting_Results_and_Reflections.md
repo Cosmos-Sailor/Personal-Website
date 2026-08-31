@@ -6,7 +6,7 @@
     padding: '15px';
     font-size: '20px';
     line-height: 1.6;
-    variant: 'h5';
+    variant: 'h3';
   }
 </style>
 
