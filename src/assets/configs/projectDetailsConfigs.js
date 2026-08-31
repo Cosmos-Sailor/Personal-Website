@@ -57,7 +57,7 @@ import terrawardenPaper from "../PDFs/Terrawarden_Paper.pdf"
 import terrawardenPoster from "../PDFs/Terrawarden_Poster.pdf"
 
 //deep learning
-import semanticSegmentationPaper from "../PDFs/HW_2_Dramatic_Data.pdf"
+import semanticSegmentationPaper from "../PDFs/Semantic_Segmentation_Paper.pdf"
 
 const projectConfig = [
     {
